@@ -1,5 +1,5 @@
 // ============================================================
-// Free better Weather -- Popup v3.1.0
+// Free better Weather -- Popup v3.2.0
 // (c) HalloWelt42
 // ============================================================
 
@@ -173,13 +173,13 @@
     renderModePreviews();
   }
 
-  function renderCanvasIcon(canvas, size, condition) {
+  function renderCanvasIcon(canvas, size, condition, mode, temp) {
     var ctx = canvas.getContext('2d');
     ctx.clearRect(0, 0, size, size);
 
     try {
       import('../shared/icon-renderer.js').then(function(module) {
-        module.renderIcon(ctx, size, condition, 'symbol', null);
+        module.renderIcon(ctx, size, condition, mode || 'symbol', temp || null);
       });
     } catch (e) {
       ctx.fillStyle = '#78909C';
@@ -192,10 +192,22 @@
 
   function renderModePreviews() {
     var condition = (weather && weather.condition) ? weather.condition : 'partly-cloudy-day';
+    var temp = (weather && weather.temperature !== null && weather.temperature !== undefined)
+      ? convertTemp(weather.temperature) : 18;
+
     elModeBtns.forEach(function(btn) {
       var canvas = btn.querySelector('.mode-preview');
-      if (canvas) {
-        renderCanvasIcon(canvas, 24, condition);
+      if (!canvas) return;
+      var mode = btn.dataset.mode;
+
+      if (mode === 'symbol-badge') {
+        renderCanvasIcon(canvas, 24, condition, 'symbol-temp', temp);
+      } else if (mode === 'symbol') {
+        renderCanvasIcon(canvas, 24, condition, 'symbol', null);
+      } else if (mode === 'badge-only') {
+        // No custom icon in badge-only mode -- leave canvas transparent
+        var ctx = canvas.getContext('2d');
+        ctx.clearRect(0, 0, 24, 24);
       }
     });
   }

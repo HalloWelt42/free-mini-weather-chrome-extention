@@ -1,5 +1,5 @@
 // ============================================================
-// Free better Weather -- Icon Renderer v3.1.0
+// Free better Weather -- Icon Renderer v3.2.0
 // Canvas-based weather icons for browser extension
 // (c) HalloWelt42
 // ============================================================

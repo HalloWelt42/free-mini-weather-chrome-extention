@@ -1,5 +1,5 @@
 // ============================================================
-// Free better Weather -- Background Service Worker v3.1.0
+// Free better Weather -- Background Service Worker v3.2.0
 // Bright Sky API + Nominatim Geocoding
 // (c) HalloWelt42
 // ============================================================
@@ -243,12 +243,7 @@ function applyWeather(weather) {
   }
 
   if (mode === 'badge-only') {
-    chrome.action.setIcon({ path: {
-      '16': 'icons/icon-16.png',
-      '32': 'icons/icon-32.png',
-      '48': 'icons/icon-48.png',
-      '128': 'icons/icon-128.png',
-    }});
+    setDefaultIcon();
   }
 
   chrome.action.setTitle({ title: buildTooltip(weather) });
@@ -271,6 +266,25 @@ function buildTooltip(w) {
     parts.push(Math.round(w.windSpeed * 3.6) + ' km/h');
   }
   return parts.join(' | ');
+}
+
+// === SET DEFAULT ICON (for badge-only mode) ===
+async function setDefaultIcon() {
+  try {
+    const imageData = {};
+    for (const s of [16, 32]) {
+      const resp = await fetch(chrome.runtime.getURL('icons/icon-' + s + '.png'));
+      const blob = await resp.blob();
+      const bmp = await createImageBitmap(blob);
+      const canvas = new OffscreenCanvas(s, s);
+      const ctx = canvas.getContext('2d');
+      ctx.drawImage(bmp, 0, 0);
+      imageData[s] = ctx.getImageData(0, 0, s, s);
+    }
+    chrome.action.setIcon({ imageData });
+  } catch (err) {
+    console.warn('[Weather] Default icon error: ' + err.message);
+  }
 }
 
 // === SET ICON ===
