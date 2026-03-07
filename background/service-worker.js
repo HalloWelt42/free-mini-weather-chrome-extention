@@ -1,5 +1,5 @@
 // ============================================================
-// Free better Weather -- Background Service Worker v3.2.0
+// Free better Weather -- Background Service Worker v3.2.1
 // Bright Sky API + Nominatim Geocoding
 // (c) HalloWelt42
 // ============================================================

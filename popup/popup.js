@@ -1,5 +1,5 @@
 // ============================================================
-// Free better Weather -- Popup v3.2.0
+// Free better Weather -- Popup v3.2.1
 // (c) HalloWelt42
 // ============================================================
 
@@ -121,6 +121,7 @@
     renderModeButtons();
     renderUnitButtons();
     renderInterval();
+    renderModePreviews();
   }
 
   function renderWeather() {
@@ -168,9 +169,6 @@
 
     // Canvas icon
     renderCanvasIcon(elWeatherCanvas, 48, weather.condition || 'cloudy');
-
-    // Mode previews
-    renderModePreviews();
   }
 
   function renderCanvasIcon(canvas, size, condition, mode, temp) {
