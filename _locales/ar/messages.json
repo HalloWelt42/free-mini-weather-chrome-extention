@@ -135,6 +135,9 @@
   "dataSource": {
     "message": "البيانات: DWD via Bright Sky API"
   },
+  "labelUnit": {
+    "message": "درجة الحرارة"
+  },
 
   "pageTitle_donate": {
     "message": "شكر"

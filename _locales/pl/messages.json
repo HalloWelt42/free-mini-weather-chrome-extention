@@ -3,7 +3,7 @@
     "message": "Free better Weather"
   },
   "appDescription": {
-    "message": "Pogoda na zywo na pasku narzedzi przegladarki. Temperatura, warunki, wiatr -- wszystko w jednym spojrzeniu. Prywatne, lokalne, open source."
+    "message": "Pogoda na żywo na pasku narzędzi przeglądarki. Temperatura, warunki, wiatr -- wszystko w jednym spojrzeniu. Prywatne, lokalne, open source."
   },
   "appDefaultTitle": {
     "message": "Free better Weather"
@@ -22,10 +22,10 @@
     "message": "Zapisz"
   },
   "btnRefresh": {
-    "message": "Odswiez"
+    "message": "Odśwież"
   },
   "labelDisplayMode": {
-    "message": "Wyswietlanie"
+    "message": "Wyświetlanie"
   },
   "modeSymbolBadge": {
     "message": "Symbol + Temp"
@@ -37,13 +37,13 @@
     "message": "Tylko temp"
   },
   "labelInterval": {
-    "message": "Interwal aktualizacji"
+    "message": "Interwał aktualizacji"
   },
   "noLocation": {
     "message": "Nie ustawiono lokalizacji"
   },
   "searchNoResults": {
-    "message": "Brak wynikow"
+    "message": "Brak wyników"
   },
   "statusSaved": {
     "message": "Zapisano"
@@ -52,10 +52,10 @@
     "message": "Zaktualizowano"
   },
   "statusError": {
-    "message": "Blad"
+    "message": "Błąd"
   },
   "humidity": {
-    "message": "Wilgotnosc"
+    "message": "Wilgotność"
   },
   "wind": {
     "message": "Wiatr"
@@ -88,25 +88,25 @@
     }
   },
   "sayThanks": {
-    "message": "Podziekuj"
+    "message": "Podziękuj"
   },
   "privacy": {
-    "message": "Prywatnosc"
+    "message": "Prywatność"
   },
   "conditionDry": {
     "message": "Sucho"
   },
   "conditionFog": {
-    "message": "Mgla"
+    "message": "Mgła"
   },
   "conditionRain": {
     "message": "Deszcz"
   },
   "conditionSleet": {
-    "message": "Deszcz ze sniegiem"
+    "message": "Deszcz ze śniegiem"
   },
   "conditionSnow": {
-    "message": "Snieg"
+    "message": "Śnieg"
   },
   "conditionHail": {
     "message": "Grad"
@@ -121,7 +121,7 @@
     "message": "Pochmurno"
   },
   "conditionPartlyCloudy": {
-    "message": "Czesciowo pochmurno"
+    "message": "Częściowo pochmurno"
   },
   "conditionWind": {
     "message": "Wietrznie"
@@ -130,23 +130,26 @@
     "message": "Szukanie..."
   },
   "removeLocation": {
-    "message": "Usun"
+    "message": "Usuń"
   },
   "dataSource": {
     "message": "Dane: DWD via Bright Sky API"
   },
+  "labelUnit": {
+    "message": "Temperatura"
+  },
 
   "pageTitle_donate": {
-    "message": "Podziekuj"
+    "message": "Podziękuj"
   },
   "donateHeadline": {
-    "message": "Zrobione z miloscia"
+    "message": "Zrobione z miłością"
   },
   "donateIntro": {
-    "message": "Jesli podoba Ci sie to rozszerzenie, mozesz postawic mi kawe lub wyslac maly datek w kryptowalucie."
+    "message": "Jeśli podoba Ci się to rozszerzenie, możesz postawić mi kawę lub wysłać mały datek w kryptowalucie."
   },
   "donateBtnKofi": {
-    "message": "Postaw mi kawe"
+    "message": "Postaw mi kawę"
   },
   "donateCryptoTitle": {
     "message": "Crypto"
@@ -158,32 +161,32 @@
     "message": "Skopiowano!"
   },
   "donateThanks": {
-    "message": "Dziekujemy za wsparcie!"
+    "message": "Dziękujemy za wsparcie!"
   },
 
   "pageTitle_privacy": {
-    "message": "Polityka prywatnosci"
+    "message": "Polityka prywatności"
   },
   "privacyIntro": {
-    "message": "To rozszerzenie szanuje Twoja prywatnosc. Wszystkie dane sa przechowywane lokalnie."
+    "message": "To rozszerzenie szanuje Twoją prywatność. Wszystkie dane są przechowywane lokalnie."
   },
   "privacyStorageTitle": {
     "message": "Przechowywane dane"
   },
   "privacyStorageText": {
-    "message": "Preferencje lokalizacji, buforowane dane pogodowe i ustawienia wyswietlania sa przechowywane lokalnie w Chrome Storage. Nic nie jest wysylane do programisty."
+    "message": "Preferencje lokalizacji, buforowane dane pogodowe i ustawienia wyświetlania są przechowywane lokalnie w Chrome Storage. Nic nie jest wysyłane do programisty."
   },
   "privacyNetworkTitle": {
     "message": "Zapytania sieciowe"
   },
   "privacyNetworkText": {
-    "message": "Rozszerzenie kontaktuje sie tylko z dwoma uslugami: api.brightsky.dev dla danych pogodowych (otwarte dane DWD) i nominatim.openstreetmap.org dla geokodowania miast (tylko podczas wyszukiwania). Bez sledzenia, bez analityki."
+    "message": "Rozszerzenie kontaktuje się tylko z dwoma usługami: api.brightsky.dev dla danych pogodowych (otwarte dane DWD) i nominatim.openstreetmap.org dla geokodowania miast (tylko podczas wyszukiwania). Bez śledzenia, bez analityki."
   },
   "privacyPermissionsTitle": {
     "message": "Uprawnienia"
   },
   "privacyPermStorage": {
-    "message": "storage -- Lokalne przechowywanie ustawien i buforowanych danych pogodowych"
+    "message": "storage -- Lokalne przechowywanie ustawień i buforowanych danych pogodowych"
   },
   "privacyPermAlarms": {
     "message": "alarms -- Okresowe aktualizacje pogody w tle"

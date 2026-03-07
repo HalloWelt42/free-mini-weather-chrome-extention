@@ -3,83 +3,83 @@
     "message": "Free better Weather"
   },
   "appDescription": {
-    "message": "Thoi tiet truc tiep tren thanh cong cu trinh duyet. Nhiet do, dieu kien, gio -- tat ca trong mot cai nhin. Rieng tu, cuc bo, ma nguon mo."
+    "message": "Thời tiết trực tiếp trên thanh công cụ trình duyệt. Nhiệt độ, điều kiện, gió -- tất cả trong một cái nhìn. Riêng tư, cục bộ, mã nguồn mở."
   },
   "appDefaultTitle": {
     "message": "Free better Weather"
   },
 
   "labelLocation": {
-    "message": "Vi tri"
+    "message": "Vị trí"
   },
   "placeholderSearchCity": {
-    "message": "Tim thanh pho..."
+    "message": "Tìm thành phố..."
   },
   "btnSearch": {
-    "message": "Tim"
+    "message": "Tìm"
   },
   "btnSave": {
-    "message": "Luu"
+    "message": "Lưu"
   },
   "btnRefresh": {
-    "message": "Lam moi"
+    "message": "Làm mới"
   },
   "labelDisplayMode": {
-    "message": "Hien thi"
+    "message": "Hiển thị"
   },
   "modeSymbolBadge": {
-    "message": "Bieu tuong + Nhiet do"
+    "message": "Biểu tượng + Nhiệt độ"
   },
   "modeSymbol": {
-    "message": "Chi bieu tuong"
+    "message": "Chỉ biểu tượng"
   },
   "modeBadgeOnly": {
-    "message": "Chi nhiet do"
+    "message": "Chỉ nhiệt độ"
   },
   "labelInterval": {
-    "message": "Khoang thoi gian cap nhat"
+    "message": "Khoảng thời gian cập nhật"
   },
   "noLocation": {
-    "message": "Chua dat vi tri"
+    "message": "Chưa đặt vị trí"
   },
   "searchNoResults": {
-    "message": "Khong co ket qua"
+    "message": "Không có kết quả"
   },
   "statusSaved": {
-    "message": "Da luu"
+    "message": "Đã lưu"
   },
   "statusUpdated": {
-    "message": "Da cap nhat"
+    "message": "Đã cập nhật"
   },
   "statusError": {
-    "message": "Loi"
+    "message": "Lỗi"
   },
   "humidity": {
-    "message": "Do am"
+    "message": "Độ ẩm"
   },
   "wind": {
-    "message": "Gio"
+    "message": "Gió"
   },
   "clouds": {
-    "message": "May"
+    "message": "Mây"
   },
   "recommended": {
-    "message": "khuyen nghi"
+    "message": "khuyến nghị"
   },
   "minutes5": {
-    "message": "5 phut"
+    "message": "5 phút"
   },
   "minutes10": {
-    "message": "10 phut"
+    "message": "10 phút"
   },
   "minutes15": {
-    "message": "15 phut"
+    "message": "15 phút"
   },
   "minutes30": {
-    "message": "30 phut"
+    "message": "30 phút"
   },
   "minutes60": {
-    "message": "60 phut"
+    "message": "60 phút"
   },
   "footerCopyright": {
     "message": "(c) $1 HalloWelt42",
@@ -88,110 +88,113 @@
     }
   },
   "sayThanks": {
-    "message": "Cam on"
+    "message": "Cảm ơn"
   },
   "privacy": {
-    "message": "Quyen rieng tu"
+    "message": "Quyền riêng tư"
   },
   "conditionDry": {
-    "message": "Kho"
+    "message": "Khô"
   },
   "conditionFog": {
-    "message": "Suong mu"
+    "message": "Sương mù"
   },
   "conditionRain": {
-    "message": "Mua"
+    "message": "Mưa"
   },
   "conditionSleet": {
-    "message": "Mua tuyet"
+    "message": "Mưa tuyết"
   },
   "conditionSnow": {
-    "message": "Tuyet"
+    "message": "Tuyết"
   },
   "conditionHail": {
-    "message": "Mua da"
+    "message": "Mưa đá"
   },
   "conditionThunderstorm": {
-    "message": "Dong bao"
+    "message": "Dông bão"
   },
   "conditionClear": {
-    "message": "Quang dang"
+    "message": "Quang đãng"
   },
   "conditionCloudy": {
-    "message": "Nhieu may"
+    "message": "Nhiều mây"
   },
   "conditionPartlyCloudy": {
-    "message": "Co may mot phan"
+    "message": "Có mây một phần"
   },
   "conditionWind": {
-    "message": "Gio manh"
+    "message": "Gió mạnh"
   },
   "searchingCity": {
-    "message": "Dang tim..."
+    "message": "Đang tìm..."
   },
   "removeLocation": {
-    "message": "Xoa"
+    "message": "Xóa"
   },
   "dataSource": {
-    "message": "Du lieu: DWD via Bright Sky API"
+    "message": "Dữ liệu: DWD via Bright Sky API"
+  },
+  "labelUnit": {
+    "message": "Nhiệt độ"
   },
 
   "pageTitle_donate": {
-    "message": "Cam on"
+    "message": "Cảm ơn"
   },
   "donateHeadline": {
-    "message": "Lam voi tinh yeu"
+    "message": "Làm với tình yêu"
   },
   "donateIntro": {
-    "message": "Neu ban thich tien ich mo rong nay, ban co the mua cho toi mot ly ca phe hoac gui mot khoan quyen gop nho bang tien dien tu."
+    "message": "Nếu bạn thích tiện ích mở rộng này, bạn có thể mua cho tôi một ly cà phê hoặc gửi một khoản quyên góp nhỏ bằng tiền điện tử."
   },
   "donateBtnKofi": {
-    "message": "Mua cho toi ca phe"
+    "message": "Mua cho tôi cà phê"
   },
   "donateCryptoTitle": {
     "message": "Crypto"
   },
   "donateCopyBtn": {
-    "message": "Sao chep"
+    "message": "Sao chép"
   },
   "donateCopied": {
-    "message": "Da sao chep!"
+    "message": "Đã sao chép!"
   },
   "donateThanks": {
-    "message": "Cam on su ung ho cua ban!"
+    "message": "Cảm ơn sự ủng hộ của bạn!"
   },
 
   "pageTitle_privacy": {
-    "message": "Chinh sach quyen rieng tu"
+    "message": "Chính sách quyền riêng tư"
   },
   "privacyIntro": {
-    "message": "Tien ich mo rong nay ton trong quyen rieng tu cua ban. Tat ca du lieu duoc luu tru cuc bo."
+    "message": "Tiện ích mở rộng này tôn trọng quyền riêng tư của bạn. Tất cả dữ liệu được lưu trữ cục bộ."
   },
   "privacyStorageTitle": {
-    "message": "Du lieu luu tru"
+    "message": "Dữ liệu lưu trữ"
   },
   "privacyStorageText": {
-    "message": "Tuy chon vi tri, du lieu thoi tiet da luu vao bo nho dem va cai dat hien thi duoc luu tru cuc bo trong Chrome Storage. Khong gi duoc gui den nha phat trien."
+    "message": "Tùy chọn vị trí, dữ liệu thời tiết đã lưu vào bộ nhớ đệm và cài đặt hiển thị được lưu trữ cục bộ trong Chrome Storage. Không gì được gửi đến nhà phát triển."
   },
   "privacyNetworkTitle": {
-    "message": "Yeu cau mang"
+    "message": "Yêu cầu mạng"
   },
   "privacyNetworkText": {
-    "message": "Tien ich mo rong chi lien he hai dich vu: api.brightsky.dev de lay du lieu thoi tiet (du lieu mo DWD) va nominatim.openstreetmap.org de ma hoa dia ly thanh pho (chi khi tim kiem). Khong theo doi, khong phan tich."
+    "message": "Tiện ích mở rộng chỉ liên hệ hai dịch vụ: api.brightsky.dev để lấy dữ liệu thời tiết (dữ liệu mở DWD) và nominatim.openstreetmap.org để mã hóa địa lý thành phố (chỉ khi tìm kiếm). Không theo dõi, không phân tích."
   },
   "privacyPermissionsTitle": {
-    "message": "Quyen"
+    "message": "Quyền"
   },
   "privacyPermStorage": {
-    "message": "storage -- Luu tru cuc bo cai dat va du lieu thoi tiet da luu vao bo nho dem"
+    "message": "storage -- Lưu trữ cục bộ cài đặt và dữ liệu thời tiết đã lưu vào bộ nhớ đệm"
   },
   "privacyPermAlarms": {
-    "message": "alarms -- Cap nhat thoi tiet dinh ky trong nen"
+    "message": "alarms -- Cập nhật thời tiết định kỳ trong nền"
   },
   "privacyPermBrightsky": {
-    "message": "api.brightsky.dev -- Lay thoi tiet hien tai (du lieu mo DWD)"
+    "message": "api.brightsky.dev -- Lấy thời tiết hiện tại (dữ liệu mở DWD)"
   },
   "privacyPermNominatim": {
-    "message": "nominatim.openstreetmap.org -- Ma hoa dia ly thanh pho (chi khi tim kiem)"
+    "message": "nominatim.openstreetmap.org -- Mã hóa địa lý thành phố (chỉ khi tìm kiếm)"
   }
 }

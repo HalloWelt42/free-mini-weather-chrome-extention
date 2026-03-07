@@ -135,6 +135,9 @@
   "dataSource": {
     "message": "ข้อมูล: DWD via Bright Sky API"
   },
+  "labelUnit": {
+    "message": "อุณหภูมิ"
+  },
 
   "pageTitle_donate": {
     "message": "ขอบคุณ"

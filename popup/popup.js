@@ -1,5 +1,5 @@
 // ============================================================
-// Free better Weather -- Popup v3.0.0
+// Free better Weather -- Popup v3.1.0
 // (c) HalloWelt42
 // ============================================================
 
@@ -28,6 +28,7 @@
   const elLinkDonate = document.getElementById('linkDonate');
   const elLinkPrivacy = document.getElementById('linkPrivacy');
   const elModeBtns = document.querySelectorAll('.mode-btn');
+  const elUnitBtns = document.querySelectorAll('.unit-btn');
 
   // State
   let settings = {
@@ -35,10 +36,11 @@
     activeLocationIndex: 0,
     displayMode: 'symbol-badge',
     updateInterval: 15,
+    temperatureUnit: 'C',
   };
   let weather = null;
 
-  // Condition display names
+  // Condition display names (API key -> i18n key)
   const CONDITION_LABELS = {
     'dry': 'conditionDry',
     'fog': 'conditionFog',
@@ -49,15 +51,24 @@
     'thunderstorm': 'conditionThunderstorm',
   };
 
+  // === TEMPERATURE ===
+  function convertTemp(celsius) {
+    if (celsius === null || celsius === undefined) return null;
+    if (settings.temperatureUnit === 'F') return Math.round(celsius * 9 / 5 + 32);
+    return Math.round(celsius);
+  }
+
+  function tempUnit() {
+    return settings.temperatureUnit === 'F' ? 'F' : 'C';
+  }
+
   // === INIT ===
   function init() {
     elVersion.textContent = 'v' + chrome.runtime.getManifest().version;
 
-    // Footer copyright with dynamic year
     var year = new Date().getFullYear();
     elFooterCopyright.textContent = i18n('footerCopyright', [String(year)]);
 
-    // Footer links
     elLinkDonate.addEventListener('click', function(e) {
       e.preventDefault();
       chrome.tabs.create({ url: chrome.runtime.getURL('pages/donate.html') });
@@ -67,7 +78,6 @@
       chrome.tabs.create({ url: chrome.runtime.getURL('pages/privacy.html') });
     });
 
-    // Event listeners
     elBtnSearch.addEventListener('click', doSearch);
     elSearchInput.addEventListener('keydown', function(e) {
       if (e.key === 'Enter') doSearch();
@@ -81,6 +91,16 @@
         elModeBtns.forEach(function(b) { b.classList.remove('active'); });
         btn.classList.add('active');
         settings.displayMode = btn.dataset.mode;
+      });
+    });
+
+    // Unit buttons
+    elUnitBtns.forEach(function(btn) {
+      btn.addEventListener('click', function() {
+        elUnitBtns.forEach(function(b) { b.classList.remove('active'); });
+        btn.classList.add('active');
+        settings.temperatureUnit = btn.dataset.unit;
+        renderWeather();
       });
     });
 
@@ -99,6 +119,7 @@
     renderWeather();
     renderLocationChips();
     renderModeButtons();
+    renderUnitButtons();
     renderInterval();
   }
 
@@ -121,7 +142,7 @@
 
     // Temperature
     if (weather.temperature !== null && weather.temperature !== undefined) {
-      elWeatherTemp.textContent = Math.round(weather.temperature) + ' C';
+      elWeatherTemp.textContent = convertTemp(weather.temperature) + '°' + tempUnit();
     } else {
       elWeatherTemp.textContent = '--';
     }
@@ -156,16 +177,11 @@
     var ctx = canvas.getContext('2d');
     ctx.clearRect(0, 0, size, size);
 
-    // Import icon renderer dynamically - since we are in popup context
-    // we use a simple approach: draw directly using the service worker's rendered data
-    // For the popup preview, we do a simpler approach using the canvas
     try {
-      // We need to dynamically import the renderer
       import('../shared/icon-renderer.js').then(function(module) {
         module.renderIcon(ctx, size, condition, 'symbol', null);
       });
     } catch (e) {
-      // Fallback: simple text
       ctx.fillStyle = '#78909C';
       ctx.font = 'bold 24px sans-serif';
       ctx.textAlign = 'center';
@@ -219,6 +235,12 @@
   function renderModeButtons() {
     elModeBtns.forEach(function(btn) {
       btn.classList.toggle('active', btn.dataset.mode === settings.displayMode);
+    });
+  }
+
+  function renderUnitButtons() {
+    elUnitBtns.forEach(function(btn) {
+      btn.classList.toggle('active', btn.dataset.unit === settings.temperatureUnit);
     });
   }
 
@@ -284,7 +306,6 @@
   }
 
   function addLocation(loc) {
-    // Check for duplicate (same lat/lon rounded)
     var isDuplicate = settings.locations.some(function(existing) {
       return existing.lat.toFixed(2) === loc.lat.toFixed(2)
           && existing.lon.toFixed(2) === loc.lon.toFixed(2);
@@ -335,7 +356,6 @@
     }, 2000);
   }
 
-  // Init on DOM ready
   if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', init);
   } else {

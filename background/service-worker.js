@@ -1,6 +1,6 @@
 // ============================================================
-// Free better Weather -- Background Service Worker v3.0.0
-// Bright Sky API (DWD) + Nominatim Geocoding
+// Free better Weather -- Background Service Worker v3.1.0
+// Bright Sky API + Nominatim Geocoding
 // (c) HalloWelt42
 // ============================================================
 
@@ -17,43 +17,66 @@ const DEFAULTS = {
     activeLocationIndex: 0,
     displayMode: 'symbol-badge',
     updateInterval: 15,
+    temperatureUnit: 'C',
   },
   cache: {},
+};
+
+// Condition keys for i18n tooltip
+const CONDITION_I18N = {
+  'dry': 'conditionDry',
+  'fog': 'conditionFog',
+  'rain': 'conditionRain',
+  'sleet': 'conditionSleet',
+  'snow': 'conditionSnow',
+  'hail': 'conditionHail',
+  'thunderstorm': 'conditionThunderstorm',
 };
 
 let data = JSON.parse(JSON.stringify(DEFAULTS));
 let currentWeather = null;
 
-// === BADGE-FARBE (Temperaturbereich) ===
-function badgeColor(temp) {
-  if (temp <= -10) return '#1565C0';
-  if (temp <= -5)  return '#1E88E5';
-  if (temp <= 0)   return '#42A5F5';
-  if (temp <= 5)   return '#4FC3F7';
-  if (temp <= 10)  return '#26A69A';
-  if (temp <= 15)  return '#66BB6A';
-  if (temp <= 20)  return '#558B2F';
-  if (temp <= 25)  return '#F9A825';
-  if (temp <= 30)  return '#EF6C00';
-  if (temp <= 35)  return '#E53935';
+// === BADGE COLOR (always based on Celsius) ===
+function badgeColor(tempCelsius) {
+  if (tempCelsius <= -10) return '#1565C0';
+  if (tempCelsius <= -5)  return '#1E88E5';
+  if (tempCelsius <= 0)   return '#42A5F5';
+  if (tempCelsius <= 5)   return '#4FC3F7';
+  if (tempCelsius <= 10)  return '#26A69A';
+  if (tempCelsius <= 15)  return '#66BB6A';
+  if (tempCelsius <= 20)  return '#558B2F';
+  if (tempCelsius <= 25)  return '#F9A825';
+  if (tempCelsius <= 30)  return '#EF6C00';
+  if (tempCelsius <= 35)  return '#E53935';
   return '#B71C1C';
 }
 
-function badgeText(temp) {
-  if (temp === null || temp === undefined) return '';
-  return String(Math.round(temp));
+// === TEMPERATURE CONVERSION ===
+function convertTemp(celsius) {
+  if (celsius === null || celsius === undefined) return null;
+  if (data.settings.temperatureUnit === 'F') return Math.round(celsius * 9 / 5 + 32);
+  return Math.round(celsius);
+}
+
+function tempUnit() {
+  return data.settings.temperatureUnit === 'F' ? 'F' : 'C';
+}
+
+function badgeText(tempCelsius) {
+  if (tempCelsius === null || tempCelsius === undefined) return '';
+  return String(convertTemp(tempCelsius));
 }
 
 // === INIT ===
 chrome.runtime.onInstalled.addListener((details) => {
   const version = chrome.runtime.getManifest().version;
-  console.log('[Wetter] Installiert v' + version);
+  console.log('[Weather] Installed v' + version);
 
-  // Migrate from old WeatherCache settings
+  // Migrate from old settings
   if (details.reason === 'install' || details.reason === 'update') {
     chrome.storage.local.get('wcSettings', (old) => {
       if (old.wcSettings) {
-        console.log('[Wetter] Alte wcSettings gefunden, werden entfernt');
+        console.log('[Weather] Old wcSettings found, removing');
         chrome.storage.local.remove('wcSettings');
       }
     });
@@ -128,13 +151,13 @@ function isStale(timestamp) {
   return (Date.now() - timestamp) > maxAge;
 }
 
-// === WETTER ABRUFEN ===
+// === FETCH WEATHER ===
 async function updateWeather() {
   if (!data.settings.locations || data.settings.locations.length === 0) {
     setIcon('loading', 'symbol', null);
     chrome.action.setBadgeText({ text: '?' });
     chrome.action.setBadgeBackgroundColor({ color: '#546E7A' });
-    chrome.action.setTitle({ title: i18n('appDefaultTitle') + ' -- ' + i18n('noLocation') });
+    chrome.action.setTitle({ title: i18n('noLocation') });
     return;
   }
 
@@ -154,7 +177,7 @@ async function updateWeather() {
     const url = BRIGHT_SKY_API + '/current_weather?lat=' + loc.lat + '&lon=' + loc.lon;
     const resp = await fetch(url, { signal: AbortSignal.timeout(10000) });
     if (!resp.ok) {
-      console.warn('[Wetter] HTTP ' + resp.status);
+      console.warn('[Weather] HTTP ' + resp.status);
       if (cached) {
         currentWeather = cached.weather;
         applyWeather(cached.weather);
@@ -169,9 +192,9 @@ async function updateWeather() {
     await saveData();
     applyWeather(weather);
 
-    console.log('[Wetter] Update OK: ' + weather.condition + ' ' + weather.temperature + ' C');
+    console.log('[Weather] OK: ' + weather.condition + ' ' + convertTemp(weather.temperature) + '°' + tempUnit());
   } catch (err) {
-    console.warn('[Wetter] Fehler: ' + err.message);
+    console.warn('[Weather] Error: ' + err.message);
     if (cached) {
       currentWeather = cached.weather;
       applyWeather(cached.weather);
@@ -179,12 +202,12 @@ async function updateWeather() {
       setIcon('error', 'symbol', null);
       chrome.action.setBadgeText({ text: '!' });
       chrome.action.setBadgeBackgroundColor({ color: '#EF5350' });
-      chrome.action.setTitle({ title: i18n('appDefaultTitle') + ' -- Fehler' });
+      chrome.action.setTitle({ title: i18n('statusError') });
     }
   }
 }
 
-// === BRIGHT SKY DATEN PARSEN ===
+// === PARSE BRIGHT SKY DATA ===
 function parseBrightSkyData(json) {
   const w = json.weather;
   return {
@@ -203,7 +226,7 @@ function parseBrightSkyData(json) {
   };
 }
 
-// === WETTER ANWENDEN (Icon, Badge, Tooltip) ===
+// === APPLY WEATHER (Icon, Badge, Tooltip) ===
 function applyWeather(weather) {
   const mode = data.settings.displayMode || 'symbol-badge';
 
@@ -214,13 +237,12 @@ function applyWeather(weather) {
   if ((mode === 'symbol-badge' || mode === 'badge-only') && weather.temperature !== null) {
     chrome.action.setBadgeText({ text: badgeText(weather.temperature) });
     chrome.action.setBadgeBackgroundColor({ color: badgeColor(weather.temperature) });
-    try { chrome.action.setBadgeTextColor({ color: '#FFFFFF' }); } catch(e) { /* not supported in older Chrome */ }
+    try { chrome.action.setBadgeTextColor({ color: '#FFFFFF' }); } catch(e) {}
   } else {
     chrome.action.setBadgeText({ text: '' });
   }
 
   if (mode === 'badge-only') {
-    // Reset to default icon
     chrome.action.setIcon({ path: {
       '16': 'icons/icon-16.png',
       '32': 'icons/icon-32.png',
@@ -234,12 +256,13 @@ function applyWeather(weather) {
 
 // === TOOLTIP ===
 function buildTooltip(w) {
-  const parts = [i18n('appDefaultTitle')];
+  const parts = [];
   if (w.temperature !== null) {
-    parts.push(Math.round(w.temperature) + ' C');
+    parts.push(convertTemp(w.temperature) + '°' + tempUnit());
   }
   if (w.conditionDwd) {
-    parts.push(w.conditionDwd);
+    const key = CONDITION_I18N[w.conditionDwd];
+    parts.push(key ? i18n(key) : w.conditionDwd);
   }
   if (w.humidity !== null) {
     parts.push(w.humidity + '%');
@@ -250,13 +273,13 @@ function buildTooltip(w) {
   return parts.join(' | ');
 }
 
-// === ICON SETZEN ===
+// === SET ICON ===
 function setIcon(condition, mode, temp) {
   try {
     const imageData = createIconImageData(condition, mode, temp);
     chrome.action.setIcon({ imageData });
   } catch (err) {
-    console.warn('[Wetter] Icon-Render-Fehler: ' + err.message);
+    console.warn('[Weather] Icon render error: ' + err.message);
   }
 }
 
@@ -274,7 +297,7 @@ async function searchCity(query) {
   });
 
   if (!resp.ok) {
-    console.warn('[Wetter] Nominatim HTTP ' + resp.status);
+    console.warn('[Weather] Nominatim HTTP ' + resp.status);
     return [];
   }
 
@@ -291,7 +314,7 @@ async function searchCity(query) {
   });
 }
 
-// === i18n helper for service worker ===
+// === i18n helper ===
 function i18n(key, substitutions) {
   return chrome.i18n.getMessage(key, substitutions) || key;
 }
@@ -301,8 +324,8 @@ chrome.runtime.onMessage.addListener((msg, sender, sendResponse) => {
   switch (msg.type) {
     case 'GET_SETTINGS':
       loadData().then(() => {
-        // Service Worker kann von Chrome beendet werden -- currentWeather ist dann null.
-        // Fallback: aus dem Cache holen.
+        // Service worker may be terminated by Chrome -- currentWeather resets to null.
+        // Fallback: restore from cache.
         if (!currentWeather && data.settings.locations && data.settings.locations.length > 0) {
           const idx = data.settings.activeLocationIndex || 0;
           const loc = data.settings.locations[idx];
@@ -315,7 +338,7 @@ chrome.runtime.onMessage.addListener((msg, sender, sendResponse) => {
           }
         }
         sendResponse({ success: true, settings: data.settings, weather: currentWeather });
-        // Falls Cache stale, im Hintergrund aktualisieren
+        // If cache is stale, refresh in background
         if (data.settings.locations && data.settings.locations.length > 0) {
           const idx2 = data.settings.activeLocationIndex || 0;
           const loc2 = data.settings.locations[idx2];
@@ -350,7 +373,6 @@ chrome.runtime.onMessage.addListener((msg, sender, sendResponse) => {
 
     case 'REFRESH':
       loadData().then(() => {
-        // Force refresh: invalidate cache for active location
         const idx = data.settings.activeLocationIndex || 0;
         const loc = data.settings.locations[idx];
         if (loc) {
@@ -366,7 +388,7 @@ chrome.runtime.onMessage.addListener((msg, sender, sendResponse) => {
       searchCity(msg.payload.query).then(function(results) {
         sendResponse({ success: true, results: results });
       }).catch(function(err) {
-        console.warn('[Wetter] Stadtsuche Fehler: ' + err.message);
+        console.warn('[Weather] City search error: ' + err.message);
         sendResponse({ success: false, error: err.message });
       });
       return true;

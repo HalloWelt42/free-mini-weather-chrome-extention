@@ -135,6 +135,9 @@
   "dataSource": {
     "message": "Data: DWD via Bright Sky API"
   },
+  "labelUnit": {
+    "message": "Temperatuur"
+  },
 
   "pageTitle_donate": {
     "message": "Bedanken"

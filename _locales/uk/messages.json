@@ -3,83 +3,83 @@
     "message": "Free better Weather"
   },
   "appDescription": {
-    "message": "Live weather in your browser toolbar. Temperature, conditions, wind -- all at a glance. Private, local, open source."
+    "message": "Погода в реальному часі на панелі інструментів браузера. Температура, умови, вітер -- все з першого погляду. Приватно, локально, відкритий код."
   },
   "appDefaultTitle": {
     "message": "Free better Weather"
   },
 
   "labelLocation": {
-    "message": "Location"
+    "message": "Розташування"
   },
   "placeholderSearchCity": {
-    "message": "Search city..."
+    "message": "Пошук міста..."
   },
   "btnSearch": {
-    "message": "Search"
+    "message": "Пошук"
   },
   "btnSave": {
-    "message": "Save"
+    "message": "Зберегти"
   },
   "btnRefresh": {
-    "message": "Refresh"
+    "message": "Оновити"
   },
   "labelDisplayMode": {
-    "message": "Display"
+    "message": "Відображення"
   },
   "modeSymbolBadge": {
-    "message": "Symbol + Temp"
+    "message": "Символ + Темп"
   },
   "modeSymbol": {
-    "message": "Symbol only"
+    "message": "Лише символ"
   },
   "modeBadgeOnly": {
-    "message": "Temp only"
+    "message": "Лише темп"
   },
   "labelInterval": {
-    "message": "Update interval"
+    "message": "Інтервал оновлення"
   },
   "noLocation": {
-    "message": "No location set"
+    "message": "Розташування не встановлено"
   },
   "searchNoResults": {
-    "message": "No results"
+    "message": "Немає результатів"
   },
   "statusSaved": {
-    "message": "Saved"
+    "message": "Збережено"
   },
   "statusUpdated": {
-    "message": "Updated"
+    "message": "Оновлено"
   },
   "statusError": {
-    "message": "Error"
+    "message": "Помилка"
   },
   "humidity": {
-    "message": "Humidity"
+    "message": "Вологість"
   },
   "wind": {
-    "message": "Wind"
+    "message": "Вітер"
   },
   "clouds": {
-    "message": "Clouds"
+    "message": "Хмарність"
   },
   "recommended": {
-    "message": "recommended"
+    "message": "рекомендовано"
   },
   "minutes5": {
-    "message": "5 minutes"
+    "message": "5 хвилин"
   },
   "minutes10": {
-    "message": "10 minutes"
+    "message": "10 хвилин"
   },
   "minutes15": {
-    "message": "15 minutes"
+    "message": "15 хвилин"
   },
   "minutes30": {
-    "message": "30 minutes"
+    "message": "30 хвилин"
   },
   "minutes60": {
-    "message": "60 minutes"
+    "message": "60 хвилин"
   },
   "footerCopyright": {
     "message": "(c) $1 HalloWelt42",
@@ -88,110 +88,113 @@
     }
   },
   "sayThanks": {
-    "message": "Say thanks"
+    "message": "Подякувати"
   },
   "privacy": {
-    "message": "Privacy"
+    "message": "Конфіденційність"
   },
   "conditionDry": {
-    "message": "Dry"
+    "message": "Сухо"
   },
   "conditionFog": {
-    "message": "Fog"
+    "message": "Туман"
   },
   "conditionRain": {
-    "message": "Rain"
+    "message": "Дощ"
   },
   "conditionSleet": {
-    "message": "Sleet"
+    "message": "Мокрий сніг"
   },
   "conditionSnow": {
-    "message": "Snow"
+    "message": "Сніг"
   },
   "conditionHail": {
-    "message": "Hail"
+    "message": "Град"
   },
   "conditionThunderstorm": {
-    "message": "Thunderstorm"
+    "message": "Гроза"
   },
   "conditionClear": {
-    "message": "Clear"
+    "message": "Ясно"
   },
   "conditionCloudy": {
-    "message": "Cloudy"
+    "message": "Хмарно"
   },
   "conditionPartlyCloudy": {
-    "message": "Partly cloudy"
+    "message": "Мінлива хмарність"
   },
   "conditionWind": {
-    "message": "Windy"
+    "message": "Вітряно"
   },
   "searchingCity": {
-    "message": "Searching..."
+    "message": "Пошук..."
   },
   "removeLocation": {
-    "message": "Remove"
+    "message": "Видалити"
   },
   "dataSource": {
-    "message": "Data: DWD via Bright Sky API"
+    "message": "Дані: DWD via Bright Sky API"
+  },
+  "labelUnit": {
+    "message": "Температура"
   },
 
   "pageTitle_donate": {
-    "message": "Say thanks"
+    "message": "Подякувати"
   },
   "donateHeadline": {
-    "message": "Made with Love"
+    "message": "Зроблено з любов'ю"
   },
   "donateIntro": {
-    "message": "If you like this extension, you can buy me a coffee or send a small crypto donation."
+    "message": "Якщо вам подобається це розширення, ви можете пригостити мене кавою або надіслати невелику пожертву в криптовалюті."
   },
   "donateBtnKofi": {
-    "message": "Buy me a Coffee"
+    "message": "Пригостити кавою"
   },
   "donateCryptoTitle": {
     "message": "Crypto"
   },
   "donateCopyBtn": {
-    "message": "Copy"
+    "message": "Копіювати"
   },
   "donateCopied": {
-    "message": "Copied!"
+    "message": "Скопійовано!"
   },
   "donateThanks": {
-    "message": "Thanks for your support!"
+    "message": "Дякуємо за вашу підтримку!"
   },
 
   "pageTitle_privacy": {
-    "message": "Privacy Policy"
+    "message": "Політика конфіденційності"
   },
   "privacyIntro": {
-    "message": "This extension respects your privacy. All data is stored locally."
+    "message": "Це розширення поважає вашу конфіденційність. Усі дані зберігаються локально."
   },
   "privacyStorageTitle": {
-    "message": "Stored Data"
+    "message": "Збережені дані"
   },
   "privacyStorageText": {
-    "message": "Location preferences, cached weather data, and display settings are stored locally in Chrome Storage. Nothing is sent to the developer."
+    "message": "Налаштування розташування, кешовані дані про погоду та параметри відображення зберігаються локально в Chrome Storage. Нічого не надсилається розробнику."
   },
   "privacyNetworkTitle": {
-    "message": "Network Requests"
+    "message": "Мережеві запити"
   },
   "privacyNetworkText": {
-    "message": "The extension contacts only two services: api.brightsky.dev for weather data (DWD open data) and nominatim.openstreetmap.org for city geocoding (only when you search). No tracking, no analytics."
+    "message": "Розширення зв'язується лише з двома сервісами: api.brightsky.dev для даних про погоду (відкриті дані DWD) та nominatim.openstreetmap.org для геокодування міст (лише під час пошуку). Без відстеження, без аналітики."
   },
   "privacyPermissionsTitle": {
-    "message": "Permissions"
+    "message": "Дозволи"
   },
   "privacyPermStorage": {
-    "message": "storage -- Local storage of settings and cached weather"
+    "message": "storage -- Локальне зберігання налаштувань та кешованих даних про погоду"
   },
   "privacyPermAlarms": {
-    "message": "alarms -- Periodic weather updates in background"
+    "message": "alarms -- Періодичне оновлення погоди у фоновому режимі"
   },
   "privacyPermBrightsky": {
-    "message": "api.brightsky.dev -- Fetching current weather (DWD open data)"
+    "message": "api.brightsky.dev -- Отримання поточної погоди (відкриті дані DWD)"
   },
   "privacyPermNominatim": {
-    "message": "nominatim.openstreetmap.org -- City geocoding (only on search)"
+    "message": "nominatim.openstreetmap.org -- Геокодування міст (лише під час пошуку)"
   }
 }

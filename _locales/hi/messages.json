@@ -135,6 +135,9 @@
   "dataSource": {
     "message": "डेटा: DWD via Bright Sky API"
   },
+  "labelUnit": {
+    "message": "तापमान"
+  },
 
   "pageTitle_donate": {
     "message": "धन्यवाद दें"

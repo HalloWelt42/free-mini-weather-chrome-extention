@@ -135,6 +135,9 @@
   "dataSource": {
     "message": "데이터: DWD via Bright Sky API"
   },
+  "labelUnit": {
+    "message": "온도"
+  },
 
   "pageTitle_donate": {
     "message": "감사 인사"

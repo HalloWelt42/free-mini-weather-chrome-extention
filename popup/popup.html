@@ -67,6 +67,15 @@
     </div>
   </section>
 
+  <!-- Temperature Unit -->
+  <section class="card">
+    <label class="card-label" data-i18n="labelUnit">Temperature</label>
+    <div class="unit-toggle">
+      <button class="unit-btn active" data-unit="C">°C</button>
+      <button class="unit-btn" data-unit="F">°F</button>
+    </div>
+  </section>
+
   <!-- Update Interval -->
   <section class="card">
     <label class="card-label" data-i18n="labelInterval">Update interval</label>
@@ -87,13 +96,21 @@
 
   <!-- Footer -->
   <footer class="footer">
-    <span id="footerCopyright"></span>
-    <div class="footer-links">
-      <a href="#" id="linkDonate" data-i18n="sayThanks">Say thanks</a>
-      <span class="footer-sep">|</span>
-      <a href="#" id="linkPrivacy" data-i18n="privacy">Privacy</a>
+    <div class="footer-chips">
+      <a href="#" class="footer-chip" id="linkPrivacy">
+        <svg width="12" height="12" viewBox="0 0 16 16" fill="none"><path d="M8 1L2 4v4c0 3.5 2.6 6.4 6 7 3.4-.6 6-3.5 6-7V4L8 1z" fill="currentColor"/></svg>
+        <span data-i18n="privacy">Privacy</span>
+      </a>
+      <a href="#" class="footer-chip footer-chip--donate" id="linkDonate">
+        <svg width="12" height="12" viewBox="0 0 16 16" fill="none"><path d="M8 14s-5.5-3.5-5.5-7A3 3 0 018 4.5 3 3 0 0113.5 7C13.5 10.5 8 14 8 14z" fill="currentColor"/></svg>
+        <span data-i18n="sayThanks">Say thanks</span>
+      </a>
     </div>
-    <div class="footer-source" data-i18n="dataSource">Data: DWD via Bright Sky API</div>
+    <div class="footer-meta">
+      <span id="footerCopyright"></span>
+      <span class="footer-sep">|</span>
+      <span class="footer-source" data-i18n="dataSource">Data: DWD via Bright Sky API</span>
+    </div>
   </footer>
 
   <script src="../shared/i18n.js"></script>

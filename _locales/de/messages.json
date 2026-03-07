@@ -135,12 +135,15 @@
   "dataSource": {
     "message": "Daten: DWD via Bright Sky API"
   },
+  "labelUnit": {
+    "message": "Temperatur"
+  },
 
   "pageTitle_donate": {
     "message": "Danke sagen"
   },
   "donateHeadline": {
-    "message": "Made with Love"
+    "message": "Mit Liebe gemacht"
   },
   "donateIntro": {
     "message": "Wenn dir diese Extension gefällt, kannst du mir einen Kaffee spendieren oder eine kleine Crypto-Spende senden."

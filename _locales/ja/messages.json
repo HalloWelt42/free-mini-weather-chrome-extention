@@ -135,6 +135,9 @@
   "dataSource": {
     "message": "データ: DWD via Bright Sky API"
   },
+  "labelUnit": {
+    "message": "温度"
+  },
 
   "pageTitle_donate": {
     "message": "感謝する"

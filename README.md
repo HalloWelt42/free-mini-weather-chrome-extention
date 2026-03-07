@@ -2,6 +2,8 @@
 
 Chrome Extension -- Wetterdaten direkt im Browser-Toolbar.
 
+![Screenshot](media/screenshot.png)
+
 ## Features
 
 - Aktuelle Wetterdaten via Bright Sky API

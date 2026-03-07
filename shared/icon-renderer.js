@@ -1,10 +1,10 @@
 // ============================================================
-// Free better Weather -- Icon Renderer v3.0.0
-// Canvas-basierte Wetter-Icons für Browser-Extension
+// Free better Weather -- Icon Renderer v3.1.0
+// Canvas-based weather icons for browser extension
 // (c) HalloWelt42
 // ============================================================
 
-// === FARBEN ===
+// === COLORS ===
 export const COLORS = {
   SUN:            '#FFB300',
   SUN_RAY:        '#FF8F00',
@@ -33,26 +33,26 @@ export const COLORS = {
   TEMP_BAR:       'rgba(0,0,0,0.55)',
 };
 
-// === BEDINGUNGEN (Condition Set) ===
+// === CONDITIONS ===
 export const CONDITIONS = [
-  { id: 'clear-day',           label: 'Klar (Tag)',                icon: '' },
-  { id: 'clear-night',         label: 'Klar (Nacht)',              icon: '' },
-  { id: 'partly-cloudy-day',   label: 'Teilw. bewölkt (Tag)',      icon: '' },
-  { id: 'partly-cloudy-night', label: 'Teilw. bewölkt (Nacht)',   icon: '' },
-  { id: 'cloudy',              label: 'Bewölkt',                   icon: '' },
-  { id: 'fog',                 label: 'Nebel',                     icon: '' },
-  { id: 'drizzle',             label: 'Nieselregen',               icon: '' },
-  { id: 'rain',                label: 'Regen',                     icon: '' },
-  { id: 'heavy-rain',          label: 'Starkregen',                icon: '' },
-  { id: 'snow',                label: 'Schnee',                    icon: '' },
-  { id: 'heavy-snow',          label: 'Starker Schnee',            icon: '' },
-  { id: 'sleet',               label: 'Schneeregen',               icon: '' },
-  { id: 'thunderstorm',        label: 'Gewitter',                  icon: '' },
-  { id: 'hail',                label: 'Hagel',                     icon: '' },
-  { id: 'wind',                label: 'Wind',                      icon: '' },
+  { id: 'clear-day',           label: 'Clear (Day)',           icon: '' },
+  { id: 'clear-night',         label: 'Clear (Night)',         icon: '' },
+  { id: 'partly-cloudy-day',   label: 'Partly Cloudy (Day)',   icon: '' },
+  { id: 'partly-cloudy-night', label: 'Partly Cloudy (Night)', icon: '' },
+  { id: 'cloudy',              label: 'Cloudy',                icon: '' },
+  { id: 'fog',                 label: 'Fog',                   icon: '' },
+  { id: 'drizzle',             label: 'Drizzle',               icon: '' },
+  { id: 'rain',                label: 'Rain',                  icon: '' },
+  { id: 'heavy-rain',          label: 'Heavy Rain',            icon: '' },
+  { id: 'snow',                label: 'Snow',                  icon: '' },
+  { id: 'heavy-snow',          label: 'Heavy Snow',            icon: '' },
+  { id: 'sleet',               label: 'Sleet',                 icon: '' },
+  { id: 'thunderstorm',        label: 'Thunderstorm',          icon: '' },
+  { id: 'hail',                label: 'Hail',                  icon: '' },
+  { id: 'wind',                label: 'Wind',                  icon: '' },
 ];
 
-// === TEMPERATUR-FARBE ===
+// === TEMPERATURE COLOR ===
 export function tempColor(temp) {
   if (temp <= -10) return '#42A5F5';
   if (temp <= 0)   return '#4FC3F7';
@@ -64,7 +64,7 @@ export function tempColor(temp) {
 }
 
 // ============================================================
-// ZEICHEN-HILFSFUNKTIONEN
+// DRAWING HELPERS
 // ============================================================
 
 function circle(ctx, cx, cy, r, fill) {
@@ -90,7 +90,7 @@ function cloudShape(ctx, x, y, w, h, color) {
 }
 
 // ============================================================
-// SYMBOL-ZEICHENFUNKTIONEN (Referenz: 32x32)
+// SYMBOL DRAWING FUNCTIONS (Reference: 32x32)
 // ============================================================
 
 function drawClearDay(ctx, s) {
@@ -339,7 +339,7 @@ function drawLoading(ctx, s) {
 }
 
 // ============================================================
-// DISPATCH: Bedingung -> Zeichenfunktion
+// DISPATCH: Condition -> Draw Function
 // ============================================================
 
 const DRAW_MAP = {
@@ -363,7 +363,7 @@ const DRAW_MAP = {
 };
 
 // ============================================================
-// TEMPERATUR-TEXT RENDERING
+// TEMPERATURE TEXT RENDERING
 // ============================================================
 
 function drawTempText(ctx, s, temp, x, y, maxW, maxH) {
@@ -400,7 +400,6 @@ function drawTempLarge(ctx, s, temp) {
   ctx.fillText(label, s * 0.5, s * 0.5);
 }
 
-// Rounded rect helper
 function roundedRect(ctx, x, y, w, h, r) {
   ctx.beginPath();
   ctx.moveTo(x + r, y);
@@ -416,16 +415,16 @@ function roundedRect(ctx, x, y, w, h, r) {
 }
 
 // ============================================================
-// DISPLAY-MODI RENDERING
+// DISPLAY MODE RENDERING
 // ============================================================
 
 /**
- * Haupt-Render-Funktion
+ * Main render function.
  * @param {CanvasRenderingContext2D|OffscreenCanvasRenderingContext2D} ctx
- * @param {number} size - Canvas-Größe (quadratisch)
- * @param {string} condition - Wetter-Bedingung
- * @param {string} mode - Display-Modus (symbol | symbol-temp | temp)
- * @param {number|null} temp - Temperatur in Grad C
+ * @param {number} size - Canvas size (square)
+ * @param {string} condition - Weather condition
+ * @param {string} mode - Display mode (symbol | symbol-temp | temp)
+ * @param {number|null} temp - Temperature in degrees
  */
 export function renderIcon(ctx, size, condition, mode = 'symbol', temp = null) {
   ctx.clearRect(0, 0, size, size);
@@ -465,7 +464,7 @@ export function renderIcon(ctx, size, condition, mode = 'symbol', temp = null) {
 }
 
 /**
- * Erzeugt ImageData für chrome.action.setIcon()
+ * Creates ImageData for chrome.action.setIcon().
  * @returns {{ 16: ImageData, 32: ImageData }}
  */
 export function createIconImageData(condition, mode = 'symbol', temp = null) {

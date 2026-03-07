@@ -3,7 +3,7 @@
     "message": "Free better Weather"
   },
   "appDescription": {
-    "message": "Tarayici arac cubugunda canli hava durumu. Sicaklik, kosullar, ruzgar -- hepsi bir bakista. Ozel, yerel, acik kaynak."
+    "message": "Tarayıcı araç çubuğunda canlı hava durumu. Sıcaklık, koşullar, rüzgar -- hepsi bir bakışta. Özel, yerel, açık kaynak."
   },
   "appDefaultTitle": {
     "message": "Free better Weather"
@@ -13,7 +13,7 @@
     "message": "Konum"
   },
   "placeholderSearchCity": {
-    "message": "Sehir ara..."
+    "message": "Şehir ara..."
   },
   "btnSearch": {
     "message": "Ara"
@@ -25,31 +25,31 @@
     "message": "Yenile"
   },
   "labelDisplayMode": {
-    "message": "Gorunum"
+    "message": "Görünüm"
   },
   "modeSymbolBadge": {
-    "message": "Sembol + Sicaklik"
+    "message": "Sembol + Sıcaklık"
   },
   "modeSymbol": {
-    "message": "Yalnizca sembol"
+    "message": "Yalnızca sembol"
   },
   "modeBadgeOnly": {
-    "message": "Yalnizca sicaklik"
+    "message": "Yalnızca sıcaklık"
   },
   "labelInterval": {
-    "message": "Guncelleme araligi"
+    "message": "Güncelleme aralığı"
   },
   "noLocation": {
-    "message": "Konum ayarlanmadi"
+    "message": "Konum ayarlanmadı"
   },
   "searchNoResults": {
-    "message": "Sonuc bulunamadi"
+    "message": "Sonuç bulunamadı"
   },
   "statusSaved": {
     "message": "Kaydedildi"
   },
   "statusUpdated": {
-    "message": "Guncellendi"
+    "message": "Güncellendi"
   },
   "statusError": {
     "message": "Hata"
@@ -58,13 +58,13 @@
     "message": "Nem"
   },
   "wind": {
-    "message": "Ruzgar"
+    "message": "Rüzgar"
   },
   "clouds": {
     "message": "Bulutlar"
   },
   "recommended": {
-    "message": "onerilen"
+    "message": "önerilen"
   },
   "minutes5": {
     "message": "5 dakika"
@@ -88,7 +88,7 @@
     }
   },
   "sayThanks": {
-    "message": "Tesekkur et"
+    "message": "Teşekkür et"
   },
   "privacy": {
     "message": "Gizlilik"
@@ -100,10 +100,10 @@
     "message": "Sis"
   },
   "conditionRain": {
-    "message": "Yagmur"
+    "message": "Yağmur"
   },
   "conditionSleet": {
-    "message": "Karla karisik yagmur"
+    "message": "Karla karışık yağmur"
   },
   "conditionSnow": {
     "message": "Kar"
@@ -112,41 +112,44 @@
     "message": "Dolu"
   },
   "conditionThunderstorm": {
-    "message": "Firtina"
+    "message": "Fırtına"
   },
   "conditionClear": {
-    "message": "Acik"
+    "message": "Açık"
   },
   "conditionCloudy": {
     "message": "Bulutlu"
   },
   "conditionPartlyCloudy": {
-    "message": "Parcali bulutlu"
+    "message": "Parçalı bulutlu"
   },
   "conditionWind": {
-    "message": "Ruzgarli"
+    "message": "Rüzgarlı"
   },
   "searchingCity": {
-    "message": "Araniyor..."
+    "message": "Aranıyor..."
   },
   "removeLocation": {
-    "message": "Kaldir"
+    "message": "Kaldır"
   },
   "dataSource": {
     "message": "Veri: DWD via Bright Sky API"
   },
+  "labelUnit": {
+    "message": "Sıcaklık"
+  },
 
   "pageTitle_donate": {
-    "message": "Tesekkur et"
+    "message": "Teşekkür et"
   },
   "donateHeadline": {
-    "message": "Sevgiyle yapildi"
+    "message": "Sevgiyle yapıldı"
   },
   "donateIntro": {
-    "message": "Bu eklentiyi begendiyseniz, bana bir kahve ismarlatabilir veya kucuk bir kripto para bagisi gonderebilirsiniz."
+    "message": "Bu eklentiyi beğendiyseniz, bana bir kahve ısmarlayabilir veya küçük bir kripto para bağışı gönderebilirsiniz."
   },
   "donateBtnKofi": {
-    "message": "Bana bir kahve ismarla"
+    "message": "Bana bir kahve ısmarla"
   },
   "donateCryptoTitle": {
     "message": "Crypto"
@@ -155,43 +158,43 @@
     "message": "Kopyala"
   },
   "donateCopied": {
-    "message": "Kopyalandi!"
+    "message": "Kopyalandı!"
   },
   "donateThanks": {
-    "message": "Desteginiz icin tesekkurler!"
+    "message": "Desteğiniz için teşekkürler!"
   },
 
   "pageTitle_privacy": {
-    "message": "Gizlilik Politikasi"
+    "message": "Gizlilik Politikası"
   },
   "privacyIntro": {
-    "message": "Bu eklenti gizliliginize saygi duyar. Tum veriler yerel olarak depolanir."
+    "message": "Bu eklenti gizliliğinize saygı duyar. Tüm veriler yerel olarak depolanır."
   },
   "privacyStorageTitle": {
     "message": "Depolanan Veriler"
   },
   "privacyStorageText": {
-    "message": "Konum tercihleri, onbellege alinmis hava durumu verileri ve gorunum ayarlari Chrome Storage'da yerel olarak depolanir. Gelistiriciye hicbir sey gonderilmez."
+    "message": "Konum tercihleri, önbelleğe alınmış hava durumu verileri ve görünüm ayarları Chrome Storage'da yerel olarak depolanır. Geliştiriciye hiçbir şey gönderilmez."
   },
   "privacyNetworkTitle": {
-    "message": "Ag Istekleri"
+    "message": "Ağ İstekleri"
   },
   "privacyNetworkText": {
-    "message": "Eklenti yalnizca iki hizmetle iletisim kurar: hava durumu verileri icin api.brightsky.dev (DWD acik veri) ve sehir cografi kodlamasi icin nominatim.openstreetmap.org (yalnizca arama sirasinda). Izleme yok, analitik yok."
+    "message": "Eklenti yalnızca iki hizmetle iletişim kurar: hava durumu verileri için api.brightsky.dev (DWD açık veri) ve şehir coğrafi kodlaması için nominatim.openstreetmap.org (yalnızca arama sırasında). İzleme yok, analitik yok."
   },
   "privacyPermissionsTitle": {
-    "message": "Izinler"
+    "message": "İzinler"
   },
   "privacyPermStorage": {
-    "message": "storage -- Ayarlarin ve onbellege alinmis hava durumu verilerinin yerel depolanmasi"
+    "message": "storage -- Ayarların ve önbelleğe alınmış hava durumu verilerinin yerel depolanması"
   },
   "privacyPermAlarms": {
-    "message": "alarms -- Arka planda periyodik hava durumu guncellemeleri"
+    "message": "alarms -- Arka planda periyodik hava durumu güncellemeleri"
   },
   "privacyPermBrightsky": {
-    "message": "api.brightsky.dev -- Guncel hava durumunu alma (DWD acik veri)"
+    "message": "api.brightsky.dev -- Güncel hava durumunu alma (DWD açık veri)"
   },
   "privacyPermNominatim": {
-    "message": "nominatim.openstreetmap.org -- Sehir cografi kodlamasi (yalnizca arama sirasinda)"
+    "message": "nominatim.openstreetmap.org -- Şehir coğrafi kodlaması (yalnızca arama sırasında)"
   }
 }
