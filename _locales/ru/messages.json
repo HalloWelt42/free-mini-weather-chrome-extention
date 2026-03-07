@@ -1,0 +1,197 @@
+{
+  "appName": {
+    "message": "Free better Weather"
+  },
+  "appDescription": {
+    "message": "Погода в реальном времени на панели инструментов браузера. Температура, условия, ветер -- все с первого взгляда. Приватно, локально, открытый код."
+  },
+  "appDefaultTitle": {
+    "message": "Free better Weather"
+  },
+
+  "labelLocation": {
+    "message": "Местоположение"
+  },
+  "placeholderSearchCity": {
+    "message": "Поиск города..."
+  },
+  "btnSearch": {
+    "message": "Поиск"
+  },
+  "btnSave": {
+    "message": "Сохранить"
+  },
+  "btnRefresh": {
+    "message": "Обновить"
+  },
+  "labelDisplayMode": {
+    "message": "Отображение"
+  },
+  "modeSymbolBadge": {
+    "message": "Символ + Темп"
+  },
+  "modeSymbol": {
+    "message": "Только символ"
+  },
+  "modeBadgeOnly": {
+    "message": "Только темп"
+  },
+  "labelInterval": {
+    "message": "Интервал обновления"
+  },
+  "noLocation": {
+    "message": "Местоположение не задано"
+  },
+  "searchNoResults": {
+    "message": "Нет результатов"
+  },
+  "statusSaved": {
+    "message": "Сохранено"
+  },
+  "statusUpdated": {
+    "message": "Обновлено"
+  },
+  "statusError": {
+    "message": "Ошибка"
+  },
+  "humidity": {
+    "message": "Влажность"
+  },
+  "wind": {
+    "message": "Ветер"
+  },
+  "clouds": {
+    "message": "Облачность"
+  },
+  "recommended": {
+    "message": "рекомендуется"
+  },
+  "minutes5": {
+    "message": "5 минут"
+  },
+  "minutes10": {
+    "message": "10 минут"
+  },
+  "minutes15": {
+    "message": "15 минут"
+  },
+  "minutes30": {
+    "message": "30 минут"
+  },
+  "minutes60": {
+    "message": "60 минут"
+  },
+  "footerCopyright": {
+    "message": "(c) $1 HalloWelt42",
+    "placeholders": {
+      "1": { "content": "$1" }
+    }
+  },
+  "sayThanks": {
+    "message": "Поблагодарить"
+  },
+  "privacy": {
+    "message": "Конфиденциальность"
+  },
+  "conditionDry": {
+    "message": "Сухо"
+  },
+  "conditionFog": {
+    "message": "Туман"
+  },
+  "conditionRain": {
+    "message": "Дождь"
+  },
+  "conditionSleet": {
+    "message": "Мокрый снег"
+  },
+  "conditionSnow": {
+    "message": "Снег"
+  },
+  "conditionHail": {
+    "message": "Град"
+  },
+  "conditionThunderstorm": {
+    "message": "Гроза"
+  },
+  "conditionClear": {
+    "message": "Ясно"
+  },
+  "conditionCloudy": {
+    "message": "Облачно"
+  },
+  "conditionPartlyCloudy": {
+    "message": "Переменная облачность"
+  },
+  "conditionWind": {
+    "message": "Ветрено"
+  },
+  "searchingCity": {
+    "message": "Поиск..."
+  },
+  "removeLocation": {
+    "message": "Удалить"
+  },
+  "dataSource": {
+    "message": "Данные: DWD via Bright Sky API"
+  },
+
+  "pageTitle_donate": {
+    "message": "Поблагодарить"
+  },
+  "donateHeadline": {
+    "message": "Сделано с любовью"
+  },
+  "donateIntro": {
+    "message": "Если вам нравится это расширение, вы можете угостить меня кофе или отправить небольшое пожертвование в криптовалюте."
+  },
+  "donateBtnKofi": {
+    "message": "Угостить кофе"
+  },
+  "donateCryptoTitle": {
+    "message": "Crypto"
+  },
+  "donateCopyBtn": {
+    "message": "Копировать"
+  },
+  "donateCopied": {
+    "message": "Скопировано!"
+  },
+  "donateThanks": {
+    "message": "Спасибо за вашу поддержку!"
+  },
+
+  "pageTitle_privacy": {
+    "message": "Политика конфиденциальности"
+  },
+  "privacyIntro": {
+    "message": "Это расширение уважает вашу конфиденциальность. Все данные хранятся локально."
+  },
+  "privacyStorageTitle": {
+    "message": "Сохраненные данные"
+  },
+  "privacyStorageText": {
+    "message": "Настройки местоположения, кэшированные данные о погоде и параметры отображения хранятся локально в Chrome Storage. Ничего не отправляется разработчику."
+  },
+  "privacyNetworkTitle": {
+    "message": "Сетевые запросы"
+  },
+  "privacyNetworkText": {
+    "message": "Расширение связывается только с двумя сервисами: api.brightsky.dev для данных о погоде (открытые данные DWD) и nominatim.openstreetmap.org для геокодирования городов (только при поиске). Без отслеживания, без аналитики."
+  },
+  "privacyPermissionsTitle": {
+    "message": "Разрешения"
+  },
+  "privacyPermStorage": {
+    "message": "storage -- Локальное хранение настроек и кэшированных данных о погоде"
+  },
+  "privacyPermAlarms": {
+    "message": "alarms -- Периодическое обновление погоды в фоновом режиме"
+  },
+  "privacyPermBrightsky": {
+    "message": "api.brightsky.dev -- Получение текущей погоды (открытые данные DWD)"
+  },
+  "privacyPermNominatim": {
+    "message": "nominatim.openstreetmap.org -- Геокодирование городов (только при поиске)"
+  }
+}

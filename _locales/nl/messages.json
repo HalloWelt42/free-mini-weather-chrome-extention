@@ -1,0 +1,197 @@
+{
+  "appName": {
+    "message": "Free better Weather"
+  },
+  "appDescription": {
+    "message": "Live weer in de browserwerkbalk. Temperatuur, omstandigheden, wind -- alles in een oogopslag. Prive, lokaal, open source."
+  },
+  "appDefaultTitle": {
+    "message": "Free better Weather"
+  },
+
+  "labelLocation": {
+    "message": "Locatie"
+  },
+  "placeholderSearchCity": {
+    "message": "Stad zoeken..."
+  },
+  "btnSearch": {
+    "message": "Zoeken"
+  },
+  "btnSave": {
+    "message": "Opslaan"
+  },
+  "btnRefresh": {
+    "message": "Vernieuwen"
+  },
+  "labelDisplayMode": {
+    "message": "Weergave"
+  },
+  "modeSymbolBadge": {
+    "message": "Symbool + Temp"
+  },
+  "modeSymbol": {
+    "message": "Alleen symbool"
+  },
+  "modeBadgeOnly": {
+    "message": "Alleen temp"
+  },
+  "labelInterval": {
+    "message": "Update-interval"
+  },
+  "noLocation": {
+    "message": "Geen locatie ingesteld"
+  },
+  "searchNoResults": {
+    "message": "Geen resultaten"
+  },
+  "statusSaved": {
+    "message": "Opgeslagen"
+  },
+  "statusUpdated": {
+    "message": "Bijgewerkt"
+  },
+  "statusError": {
+    "message": "Fout"
+  },
+  "humidity": {
+    "message": "Luchtvochtigheid"
+  },
+  "wind": {
+    "message": "Wind"
+  },
+  "clouds": {
+    "message": "Wolken"
+  },
+  "recommended": {
+    "message": "aanbevolen"
+  },
+  "minutes5": {
+    "message": "5 minuten"
+  },
+  "minutes10": {
+    "message": "10 minuten"
+  },
+  "minutes15": {
+    "message": "15 minuten"
+  },
+  "minutes30": {
+    "message": "30 minuten"
+  },
+  "minutes60": {
+    "message": "60 minuten"
+  },
+  "footerCopyright": {
+    "message": "(c) $1 HalloWelt42",
+    "placeholders": {
+      "1": { "content": "$1" }
+    }
+  },
+  "sayThanks": {
+    "message": "Bedanken"
+  },
+  "privacy": {
+    "message": "Privacy"
+  },
+  "conditionDry": {
+    "message": "Droog"
+  },
+  "conditionFog": {
+    "message": "Mist"
+  },
+  "conditionRain": {
+    "message": "Regen"
+  },
+  "conditionSleet": {
+    "message": "IJzel"
+  },
+  "conditionSnow": {
+    "message": "Sneeuw"
+  },
+  "conditionHail": {
+    "message": "Hagel"
+  },
+  "conditionThunderstorm": {
+    "message": "Onweer"
+  },
+  "conditionClear": {
+    "message": "Helder"
+  },
+  "conditionCloudy": {
+    "message": "Bewolkt"
+  },
+  "conditionPartlyCloudy": {
+    "message": "Gedeeltelijk bewolkt"
+  },
+  "conditionWind": {
+    "message": "Winderig"
+  },
+  "searchingCity": {
+    "message": "Zoeken..."
+  },
+  "removeLocation": {
+    "message": "Verwijderen"
+  },
+  "dataSource": {
+    "message": "Data: DWD via Bright Sky API"
+  },
+
+  "pageTitle_donate": {
+    "message": "Bedanken"
+  },
+  "donateHeadline": {
+    "message": "Gemaakt met liefde"
+  },
+  "donateIntro": {
+    "message": "Als je deze extensie leuk vindt, kun je me een koffie aanbieden of een kleine cryptodonatie sturen."
+  },
+  "donateBtnKofi": {
+    "message": "Koop me een koffie"
+  },
+  "donateCryptoTitle": {
+    "message": "Crypto"
+  },
+  "donateCopyBtn": {
+    "message": "Kopieren"
+  },
+  "donateCopied": {
+    "message": "Gekopieerd!"
+  },
+  "donateThanks": {
+    "message": "Bedankt voor je steun!"
+  },
+
+  "pageTitle_privacy": {
+    "message": "Privacybeleid"
+  },
+  "privacyIntro": {
+    "message": "Deze extensie respecteert je privacy. Alle gegevens worden lokaal opgeslagen."
+  },
+  "privacyStorageTitle": {
+    "message": "Opgeslagen gegevens"
+  },
+  "privacyStorageText": {
+    "message": "Locatievoorkeuren, gecachte weergegevens en weergave-instellingen worden lokaal opgeslagen in Chrome Storage. Er wordt niets naar de ontwikkelaar gestuurd."
+  },
+  "privacyNetworkTitle": {
+    "message": "Netwerkverzoeken"
+  },
+  "privacyNetworkText": {
+    "message": "De extensie maakt alleen contact met twee diensten: api.brightsky.dev voor weergegevens (DWD open data) en nominatim.openstreetmap.org voor geocodering van steden (alleen bij zoeken). Geen tracking, geen analytics."
+  },
+  "privacyPermissionsTitle": {
+    "message": "Machtigingen"
+  },
+  "privacyPermStorage": {
+    "message": "storage -- Lokale opslag van instellingen en gecachte weergegevens"
+  },
+  "privacyPermAlarms": {
+    "message": "alarms -- Periodieke weerupdates op de achtergrond"
+  },
+  "privacyPermBrightsky": {
+    "message": "api.brightsky.dev -- Ophalen van het huidige weer (DWD open data)"
+  },
+  "privacyPermNominatim": {
+    "message": "nominatim.openstreetmap.org -- Geocodering van steden (alleen bij zoeken)"
+  }
+}

@@ -1,0 +1,197 @@
+{
+  "appName": {
+    "message": "Free better Weather"
+  },
+  "appDescription": {
+    "message": "浏览器工具栏中的实时天气。温度、天况、风力 -- 一目了然。隐私、本地、开源。"
+  },
+  "appDefaultTitle": {
+    "message": "Free better Weather"
+  },
+
+  "labelLocation": {
+    "message": "位置"
+  },
+  "placeholderSearchCity": {
+    "message": "搜索城市..."
+  },
+  "btnSearch": {
+    "message": "搜索"
+  },
+  "btnSave": {
+    "message": "保存"
+  },
+  "btnRefresh": {
+    "message": "刷新"
+  },
+  "labelDisplayMode": {
+    "message": "显示"
+  },
+  "modeSymbolBadge": {
+    "message": "图标 + 温度"
+  },
+  "modeSymbol": {
+    "message": "仅图标"
+  },
+  "modeBadgeOnly": {
+    "message": "仅温度"
+  },
+  "labelInterval": {
+    "message": "更新间隔"
+  },
+  "noLocation": {
+    "message": "未设置位置"
+  },
+  "searchNoResults": {
+    "message": "无结果"
+  },
+  "statusSaved": {
+    "message": "已保存"
+  },
+  "statusUpdated": {
+    "message": "已更新"
+  },
+  "statusError": {
+    "message": "错误"
+  },
+  "humidity": {
+    "message": "湿度"
+  },
+  "wind": {
+    "message": "风"
+  },
+  "clouds": {
+    "message": "云量"
+  },
+  "recommended": {
+    "message": "推荐"
+  },
+  "minutes5": {
+    "message": "5 分钟"
+  },
+  "minutes10": {
+    "message": "10 分钟"
+  },
+  "minutes15": {
+    "message": "15 分钟"
+  },
+  "minutes30": {
+    "message": "30 分钟"
+  },
+  "minutes60": {
+    "message": "60 分钟"
+  },
+  "footerCopyright": {
+    "message": "(c) $1 HalloWelt42",
+    "placeholders": {
+      "1": { "content": "$1" }
+    }
+  },
+  "sayThanks": {
+    "message": "致谢"
+  },
+  "privacy": {
+    "message": "隐私"
+  },
+  "conditionDry": {
+    "message": "干燥"
+  },
+  "conditionFog": {
+    "message": "雾"
+  },
+  "conditionRain": {
+    "message": "雨"
+  },
+  "conditionSleet": {
+    "message": "雨夹雪"
+  },
+  "conditionSnow": {
+    "message": "雪"
+  },
+  "conditionHail": {
+    "message": "冰雹"
+  },
+  "conditionThunderstorm": {
+    "message": "雷暴"
+  },
+  "conditionClear": {
+    "message": "晴"
+  },
+  "conditionCloudy": {
+    "message": "多云"
+  },
+  "conditionPartlyCloudy": {
+    "message": "局部多云"
+  },
+  "conditionWind": {
+    "message": "大风"
+  },
+  "searchingCity": {
+    "message": "搜索中..."
+  },
+  "removeLocation": {
+    "message": "移除"
+  },
+  "dataSource": {
+    "message": "数据: DWD via Bright Sky API"
+  },
+
+  "pageTitle_donate": {
+    "message": "致谢"
+  },
+  "donateHeadline": {
+    "message": "用心制作"
+  },
+  "donateIntro": {
+    "message": "如果您喜欢这个扩展，可以请我喝杯咖啡或发送一笔小额加密货币捐赠。"
+  },
+  "donateBtnKofi": {
+    "message": "请我喝咖啡"
+  },
+  "donateCryptoTitle": {
+    "message": "Crypto"
+  },
+  "donateCopyBtn": {
+    "message": "复制"
+  },
+  "donateCopied": {
+    "message": "已复制!"
+  },
+  "donateThanks": {
+    "message": "感谢您的支持!"
+  },
+
+  "pageTitle_privacy": {
+    "message": "隐私政策"
+  },
+  "privacyIntro": {
+    "message": "此扩展尊重您的隐私。所有数据均存储在本地。"
+  },
+  "privacyStorageTitle": {
+    "message": "存储的数据"
+  },
+  "privacyStorageText": {
+    "message": "位置偏好、缓存的天气数据和显示设置存储在Chrome Storage本地。不会向开发者发送任何内容。"
+  },
+  "privacyNetworkTitle": {
+    "message": "网络请求"
+  },
+  "privacyNetworkText": {
+    "message": "该扩展仅连接两个服务: api.brightsky.dev用于天气数据 (DWD开放数据) 和nominatim.openstreetmap.org用于城市地理编码 (仅在搜索时)。无追踪、无分析。"
+  },
+  "privacyPermissionsTitle": {
+    "message": "权限"
+  },
+  "privacyPermStorage": {
+    "message": "storage -- 本地存储设置和缓存的天气数据"
+  },
+  "privacyPermAlarms": {
+    "message": "alarms -- 后台定期更新天气"
+  },
+  "privacyPermBrightsky": {
+    "message": "api.brightsky.dev -- 获取当前天气 (DWD开放数据)"
+  },
+  "privacyPermNominatim": {
+    "message": "nominatim.openstreetmap.org -- 城市地理编码 (仅在搜索时)"
+  }
+}

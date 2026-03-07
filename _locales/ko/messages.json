@@ -1,0 +1,197 @@
+{
+  "appName": {
+    "message": "Free better Weather"
+  },
+  "appDescription": {
+    "message": "브라우저 도구 모음에서 실시간 날씨. 기온, 상태, 바람 -- 한눈에 확인. 프라이빗, 로컬, 오픈소스."
+  },
+  "appDefaultTitle": {
+    "message": "Free better Weather"
+  },
+
+  "labelLocation": {
+    "message": "위치"
+  },
+  "placeholderSearchCity": {
+    "message": "도시 검색..."
+  },
+  "btnSearch": {
+    "message": "검색"
+  },
+  "btnSave": {
+    "message": "저장"
+  },
+  "btnRefresh": {
+    "message": "새로고침"
+  },
+  "labelDisplayMode": {
+    "message": "표시"
+  },
+  "modeSymbolBadge": {
+    "message": "심볼 + 기온"
+  },
+  "modeSymbol": {
+    "message": "심볼만"
+  },
+  "modeBadgeOnly": {
+    "message": "기온만"
+  },
+  "labelInterval": {
+    "message": "업데이트 간격"
+  },
+  "noLocation": {
+    "message": "위치가 설정되지 않았습니다"
+  },
+  "searchNoResults": {
+    "message": "결과 없음"
+  },
+  "statusSaved": {
+    "message": "저장됨"
+  },
+  "statusUpdated": {
+    "message": "업데이트됨"
+  },
+  "statusError": {
+    "message": "오류"
+  },
+  "humidity": {
+    "message": "습도"
+  },
+  "wind": {
+    "message": "바람"
+  },
+  "clouds": {
+    "message": "구름"
+  },
+  "recommended": {
+    "message": "권장"
+  },
+  "minutes5": {
+    "message": "5분"
+  },
+  "minutes10": {
+    "message": "10분"
+  },
+  "minutes15": {
+    "message": "15분"
+  },
+  "minutes30": {
+    "message": "30분"
+  },
+  "minutes60": {
+    "message": "60분"
+  },
+  "footerCopyright": {
+    "message": "(c) $1 HalloWelt42",
+    "placeholders": {
+      "1": { "content": "$1" }
+    }
+  },
+  "sayThanks": {
+    "message": "감사 인사"
+  },
+  "privacy": {
+    "message": "개인정보"
+  },
+  "conditionDry": {
+    "message": "맑음"
+  },
+  "conditionFog": {
+    "message": "안개"
+  },
+  "conditionRain": {
+    "message": "비"
+  },
+  "conditionSleet": {
+    "message": "진눈깨비"
+  },
+  "conditionSnow": {
+    "message": "눈"
+  },
+  "conditionHail": {
+    "message": "우박"
+  },
+  "conditionThunderstorm": {
+    "message": "뇌우"
+  },
+  "conditionClear": {
+    "message": "맑음"
+  },
+  "conditionCloudy": {
+    "message": "흐림"
+  },
+  "conditionPartlyCloudy": {
+    "message": "부분 흐림"
+  },
+  "conditionWind": {
+    "message": "강풍"
+  },
+  "searchingCity": {
+    "message": "검색 중..."
+  },
+  "removeLocation": {
+    "message": "삭제"
+  },
+  "dataSource": {
+    "message": "데이터: DWD via Bright Sky API"
+  },
+
+  "pageTitle_donate": {
+    "message": "감사 인사"
+  },
+  "donateHeadline": {
+    "message": "사랑으로 만들었습니다"
+  },
+  "donateIntro": {
+    "message": "이 확장 프로그램이 마음에 드시면 커피 한 잔을 사주시거나 소액의 암호화폐를 기부해 주세요."
+  },
+  "donateBtnKofi": {
+    "message": "커피 사주기"
+  },
+  "donateCryptoTitle": {
+    "message": "Crypto"
+  },
+  "donateCopyBtn": {
+    "message": "복사"
+  },
+  "donateCopied": {
+    "message": "복사됨!"
+  },
+  "donateThanks": {
+    "message": "후원해 주셔서 감사합니다!"
+  },
+
+  "pageTitle_privacy": {
+    "message": "개인정보 보호정책"
+  },
+  "privacyIntro": {
+    "message": "이 확장 프로그램은 개인정보를 존중합니다. 모든 데이터는 로컬에 저장됩니다."
+  },
+  "privacyStorageTitle": {
+    "message": "저장된 데이터"
+  },
+  "privacyStorageText": {
+    "message": "위치 설정, 캐시된 날씨 데이터, 표시 설정은 Chrome Storage에 로컬 저장됩니다. 개발자에게는 아무것도 전송되지 않습니다."
+  },
+  "privacyNetworkTitle": {
+    "message": "네트워크 요청"
+  },
+  "privacyNetworkText": {
+    "message": "이 확장 프로그램은 두 가지 서비스에만 연결합니다: 날씨 데이터용 api.brightsky.dev (DWD 오픈 데이터)와 도시 지오코딩용 nominatim.openstreetmap.org (검색 시에만). 추적 없음, 분석 없음."
+  },
+  "privacyPermissionsTitle": {
+    "message": "권한"
+  },
+  "privacyPermStorage": {
+    "message": "storage -- 설정 및 캐시된 날씨 데이터의 로컬 저장"
+  },
+  "privacyPermAlarms": {
+    "message": "alarms -- 백그라운드에서 주기적 날씨 업데이트"
+  },
+  "privacyPermBrightsky": {
+    "message": "api.brightsky.dev -- 현재 날씨 가져오기 (DWD 오픈 데이터)"
+  },
+  "privacyPermNominatim": {
+    "message": "nominatim.openstreetmap.org -- 도시 지오코딩 (검색 시에만)"
+  }
+}

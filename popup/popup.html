@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=360">
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <img src="../icons/icon-32.png" alt="" class="header-icon" width="20" height="20">
+    <span class="header-title" data-i18n="appName">Free better Weather</span>
+    <span class="header-version" id="version"></span>
+  </header>
+
+  <!-- Weather Card -->
+  <section class="card weather-card" id="weatherCard">
+    <div class="weather-main">
+      <canvas id="weatherCanvas" width="48" height="48"></canvas>
+      <div class="weather-info">
+        <div class="weather-temp" id="weatherTemp">--</div>
+        <div class="weather-condition" id="weatherCondition">--</div>
+      </div>
+      <button class="btn-icon" id="btnRefresh" data-i18n-title="btnRefresh">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+          <path d="M13.65 2.35A7.96 7.96 0 008 0C3.58 0 0 3.58 0 8s3.58 8 8 8c3.73 0 6.84-2.55 7.73-6h-2.08A5.99 5.99 0 018 14 6 6 0 012 8a6 6 0 019.8-4.6L9 6h7V0l-2.35 2.35z" fill="currentColor"/>
+        </svg>
+      </button>
+    </div>
+    <div class="weather-details">
+      <span class="detail" id="detailHumidity"></span>
+      <span class="detail-sep">|</span>
+      <span class="detail" id="detailWind"></span>
+      <span class="detail-sep">|</span>
+      <span class="detail" id="detailClouds"></span>
+    </div>
+    <div class="weather-no-location" id="noLocationMsg" data-i18n="noLocation">No location set</div>
+  </section>
+
+  <!-- Location Section -->
+  <section class="card">
+    <label class="card-label" data-i18n="labelLocation">Location</label>
+    <div class="location-chips" id="locationChips"></div>
+    <div class="search-row">
+      <input type="text" class="input" id="searchInput" data-i18n-placeholder="placeholderSearchCity" autocomplete="off">
+      <button class="btn-small" id="btnSearch" data-i18n="btnSearch">Search</button>
+    </div>
+    <div class="search-results hidden" id="searchResults"></div>
+  </section>
+
+  <!-- Display Mode -->
+  <section class="card">
+    <label class="card-label" data-i18n="labelDisplayMode">Display</label>
+    <div class="mode-grid">
+      <button class="mode-btn active" data-mode="symbol-badge">
+        <canvas class="mode-preview" width="24" height="24"></canvas>
+        <span data-i18n="modeSymbolBadge">Symbol + Temp</span>
+      </button>
+      <button class="mode-btn" data-mode="symbol">
+        <canvas class="mode-preview" width="24" height="24"></canvas>
+        <span data-i18n="modeSymbol">Symbol only</span>
+      </button>
+      <button class="mode-btn" data-mode="badge-only">
+        <canvas class="mode-preview" width="24" height="24"></canvas>
+        <span data-i18n="modeBadgeOnly">Temp only</span>
+      </button>
+    </div>
+  </section>
+
+  <!-- Update Interval -->
+  <section class="card">
+    <label class="card-label" data-i18n="labelInterval">Update interval</label>
+    <select class="input select" id="intervalSelect">
+      <option value="5" data-i18n="minutes5">5 minutes</option>
+      <option value="10" data-i18n="minutes10">10 minutes</option>
+      <option value="15" selected data-i18n="minutes15">15 minutes</option>
+      <option value="30" data-i18n="minutes30">30 minutes</option>
+      <option value="60" data-i18n="minutes60">60 minutes</option>
+    </select>
+  </section>
+
+  <!-- Save Button -->
+  <button class="btn-primary" id="btnSave" data-i18n="btnSave">Save</button>
+
+  <!-- Status Message -->
+  <div class="status-msg hidden" id="statusMsg"></div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <span id="footerCopyright"></span>
+    <div class="footer-links">
+      <a href="#" id="linkDonate" data-i18n="sayThanks">Say thanks</a>
+      <span class="footer-sep">|</span>
+      <a href="#" id="linkPrivacy" data-i18n="privacy">Privacy</a>
+    </div>
+    <div class="footer-source" data-i18n="dataSource">Data: DWD via Bright Sky API</div>
+  </footer>
+
+  <script src="../shared/i18n.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>

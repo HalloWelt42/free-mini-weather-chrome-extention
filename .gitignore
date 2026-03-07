@@ -1,0 +1,12 @@
+.DS_Store
+._*
+*~
+*.swp
+.vscode/
+.idea/
+web-ext-artifacts/
+*.zip
+*.crx
+*.xpi
+/store/
+node_modules/

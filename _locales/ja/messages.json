@@ -1,0 +1,197 @@
+{
+  "appName": {
+    "message": "Free better Weather"
+  },
+  "appDescription": {
+    "message": "ブラウザツールバーにライブ天気情報。気温、天候、風 -- 一目で確認。プライベート、ローカル、オープンソース。"
+  },
+  "appDefaultTitle": {
+    "message": "Free better Weather"
+  },
+
+  "labelLocation": {
+    "message": "場所"
+  },
+  "placeholderSearchCity": {
+    "message": "都市を検索..."
+  },
+  "btnSearch": {
+    "message": "検索"
+  },
+  "btnSave": {
+    "message": "保存"
+  },
+  "btnRefresh": {
+    "message": "更新"
+  },
+  "labelDisplayMode": {
+    "message": "表示"
+  },
+  "modeSymbolBadge": {
+    "message": "シンボル + 気温"
+  },
+  "modeSymbol": {
+    "message": "シンボルのみ"
+  },
+  "modeBadgeOnly": {
+    "message": "気温のみ"
+  },
+  "labelInterval": {
+    "message": "更新間隔"
+  },
+  "noLocation": {
+    "message": "場所が設定されていません"
+  },
+  "searchNoResults": {
+    "message": "結果なし"
+  },
+  "statusSaved": {
+    "message": "保存済み"
+  },
+  "statusUpdated": {
+    "message": "更新済み"
+  },
+  "statusError": {
+    "message": "エラー"
+  },
+  "humidity": {
+    "message": "湿度"
+  },
+  "wind": {
+    "message": "風"
+  },
+  "clouds": {
+    "message": "雲"
+  },
+  "recommended": {
+    "message": "推奨"
+  },
+  "minutes5": {
+    "message": "5分"
+  },
+  "minutes10": {
+    "message": "10分"
+  },
+  "minutes15": {
+    "message": "15分"
+  },
+  "minutes30": {
+    "message": "30分"
+  },
+  "minutes60": {
+    "message": "60分"
+  },
+  "footerCopyright": {
+    "message": "(c) $1 HalloWelt42",
+    "placeholders": {
+      "1": { "content": "$1" }
+    }
+  },
+  "sayThanks": {
+    "message": "感謝する"
+  },
+  "privacy": {
+    "message": "プライバシー"
+  },
+  "conditionDry": {
+    "message": "乾燥"
+  },
+  "conditionFog": {
+    "message": "霧"
+  },
+  "conditionRain": {
+    "message": "雨"
+  },
+  "conditionSleet": {
+    "message": "みぞれ"
+  },
+  "conditionSnow": {
+    "message": "雪"
+  },
+  "conditionHail": {
+    "message": "ひょう"
+  },
+  "conditionThunderstorm": {
+    "message": "雷雨"
+  },
+  "conditionClear": {
+    "message": "晴れ"
+  },
+  "conditionCloudy": {
+    "message": "曇り"
+  },
+  "conditionPartlyCloudy": {
+    "message": "一部曇り"
+  },
+  "conditionWind": {
+    "message": "強風"
+  },
+  "searchingCity": {
+    "message": "検索中..."
+  },
+  "removeLocation": {
+    "message": "削除"
+  },
+  "dataSource": {
+    "message": "データ: DWD via Bright Sky API"
+  },
+
+  "pageTitle_donate": {
+    "message": "感謝する"
+  },
+  "donateHeadline": {
+    "message": "愛を込めて作りました"
+  },
+  "donateIntro": {
+    "message": "この拡張機能を気に入っていただけたら、コーヒーをおごるか、少額の暗号通貨を寄付していただけると嬉しいです。"
+  },
+  "donateBtnKofi": {
+    "message": "コーヒーをおごる"
+  },
+  "donateCryptoTitle": {
+    "message": "Crypto"
+  },
+  "donateCopyBtn": {
+    "message": "コピー"
+  },
+  "donateCopied": {
+    "message": "コピーしました!"
+  },
+  "donateThanks": {
+    "message": "ご支援ありがとうございます!"
+  },
+
+  "pageTitle_privacy": {
+    "message": "プライバシーポリシー"
+  },
+  "privacyIntro": {
+    "message": "この拡張機能はあなたのプライバシーを尊重します。全てのデータはローカルに保存されます。"
+  },
+  "privacyStorageTitle": {
+    "message": "保存データ"
+  },
+  "privacyStorageText": {
+    "message": "場所の設定、キャッシュされた天気データ、表示設定はChrome Storageにローカル保存されます。開発者には何も送信されません。"
+  },
+  "privacyNetworkTitle": {
+    "message": "ネットワークリクエスト"
+  },
+  "privacyNetworkText": {
+    "message": "この拡張機能は2つのサービスのみに接続します: 天気データ用のapi.brightsky.dev (DWDオープンデータ) と都市ジオコーディング用のnominatim.openstreetmap.org (検索時のみ)。トラッキングなし、分析なし。"
+  },
+  "privacyPermissionsTitle": {
+    "message": "権限"
+  },
+  "privacyPermStorage": {
+    "message": "storage -- 設定とキャッシュされた天気データのローカル保存"
+  },
+  "privacyPermAlarms": {
+    "message": "alarms -- バックグラウンドでの定期的な天気更新"
+  },
+  "privacyPermBrightsky": {
+    "message": "api.brightsky.dev -- 現在の天気の取得 (DWDオープンデータ)"
+  },
+  "privacyPermNominatim": {
+    "message": "nominatim.openstreetmap.org -- 都市ジオコーディング (検索時のみ)"
+  }
+}

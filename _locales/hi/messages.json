@@ -1,0 +1,197 @@
+{
+  "appName": {
+    "message": "Free better Weather"
+  },
+  "appDescription": {
+    "message": "ब्राउज़र टूलबार में लाइव मौसम। तापमान, स्थिति, हवा -- सब एक नज़र में। निजी, स्थानीय, ओपन सोर्स।"
+  },
+  "appDefaultTitle": {
+    "message": "Free better Weather"
+  },
+
+  "labelLocation": {
+    "message": "स्थान"
+  },
+  "placeholderSearchCity": {
+    "message": "शहर खोजें..."
+  },
+  "btnSearch": {
+    "message": "खोजें"
+  },
+  "btnSave": {
+    "message": "सहेजें"
+  },
+  "btnRefresh": {
+    "message": "रिफ्रेश"
+  },
+  "labelDisplayMode": {
+    "message": "प्रदर्शन"
+  },
+  "modeSymbolBadge": {
+    "message": "प्रतीक + तापमान"
+  },
+  "modeSymbol": {
+    "message": "केवल प्रतीक"
+  },
+  "modeBadgeOnly": {
+    "message": "केवल तापमान"
+  },
+  "labelInterval": {
+    "message": "अपडेट अंतराल"
+  },
+  "noLocation": {
+    "message": "कोई स्थान सेट नहीं"
+  },
+  "searchNoResults": {
+    "message": "कोई परिणाम नहीं"
+  },
+  "statusSaved": {
+    "message": "सहेजा गया"
+  },
+  "statusUpdated": {
+    "message": "अपडेट किया गया"
+  },
+  "statusError": {
+    "message": "त्रुटि"
+  },
+  "humidity": {
+    "message": "आर्द्रता"
+  },
+  "wind": {
+    "message": "हवा"
+  },
+  "clouds": {
+    "message": "बादल"
+  },
+  "recommended": {
+    "message": "अनुशंसित"
+  },
+  "minutes5": {
+    "message": "5 मिनट"
+  },
+  "minutes10": {
+    "message": "10 मिनट"
+  },
+  "minutes15": {
+    "message": "15 मिनट"
+  },
+  "minutes30": {
+    "message": "30 मिनट"
+  },
+  "minutes60": {
+    "message": "60 मिनट"
+  },
+  "footerCopyright": {
+    "message": "(c) $1 HalloWelt42",
+    "placeholders": {
+      "1": { "content": "$1" }
+    }
+  },
+  "sayThanks": {
+    "message": "धन्यवाद दें"
+  },
+  "privacy": {
+    "message": "गोपनीयता"
+  },
+  "conditionDry": {
+    "message": "शुष्क"
+  },
+  "conditionFog": {
+    "message": "कोहरा"
+  },
+  "conditionRain": {
+    "message": "बारिश"
+  },
+  "conditionSleet": {
+    "message": "ओलावृष्टि मिश्रित बारिश"
+  },
+  "conditionSnow": {
+    "message": "बर्फ"
+  },
+  "conditionHail": {
+    "message": "ओले"
+  },
+  "conditionThunderstorm": {
+    "message": "तूफान"
+  },
+  "conditionClear": {
+    "message": "साफ"
+  },
+  "conditionCloudy": {
+    "message": "बादल छाए"
+  },
+  "conditionPartlyCloudy": {
+    "message": "आंशिक बादल"
+  },
+  "conditionWind": {
+    "message": "तेज़ हवा"
+  },
+  "searchingCity": {
+    "message": "खोज रहे हैं..."
+  },
+  "removeLocation": {
+    "message": "हटाएं"
+  },
+  "dataSource": {
+    "message": "डेटा: DWD via Bright Sky API"
+  },
+
+  "pageTitle_donate": {
+    "message": "धन्यवाद दें"
+  },
+  "donateHeadline": {
+    "message": "प्यार से बनाया गया"
+  },
+  "donateIntro": {
+    "message": "अगर आपको यह एक्सटेंशन पसंद है, तो आप मुझे एक कॉफी खरीद सकते हैं या क्रिप्टोकरेंसी में एक छोटा दान भेज सकते हैं।"
+  },
+  "donateBtnKofi": {
+    "message": "मुझे कॉफी खरीदें"
+  },
+  "donateCryptoTitle": {
+    "message": "Crypto"
+  },
+  "donateCopyBtn": {
+    "message": "कॉपी"
+  },
+  "donateCopied": {
+    "message": "कॉपी हो गया!"
+  },
+  "donateThanks": {
+    "message": "आपके समर्थन के लिए धन्यवाद!"
+  },
+
+  "pageTitle_privacy": {
+    "message": "गोपनीयता नीति"
+  },
+  "privacyIntro": {
+    "message": "यह एक्सटेंशन आपकी गोपनीयता का सम्मान करता है। सभी डेटा स्थानीय रूप से संग्रहीत होता है।"
+  },
+  "privacyStorageTitle": {
+    "message": "संग्रहीत डेटा"
+  },
+  "privacyStorageText": {
+    "message": "स्थान प्राथमिकताएं, कैश किया गया मौसम डेटा और प्रदर्शन सेटिंग्स Chrome Storage में स्थानीय रूप से संग्रहीत होती हैं। डेवलपर को कुछ भी नहीं भेजा जाता।"
+  },
+  "privacyNetworkTitle": {
+    "message": "नेटवर्क अनुरोध"
+  },
+  "privacyNetworkText": {
+    "message": "एक्सटेंशन केवल दो सेवाओं से संपर्क करता है: मौसम डेटा के लिए api.brightsky.dev (DWD ओपन डेटा) और शहर जियोकोडिंग के लिए nominatim.openstreetmap.org (केवल खोज करते समय)। कोई ट्रैकिंग नहीं, कोई एनालिटिक्स नहीं।"
+  },
+  "privacyPermissionsTitle": {
+    "message": "अनुमतियां"
+  },
+  "privacyPermStorage": {
+    "message": "storage -- सेटिंग्स और कैश किए गए मौसम डेटा का स्थानीय भंडारण"
+  },
+  "privacyPermAlarms": {
+    "message": "alarms -- पृष्ठभूमि में आवधिक मौसम अपडेट"
+  },
+  "privacyPermBrightsky": {
+    "message": "api.brightsky.dev -- वर्तमान मौसम प्राप्त करना (DWD ओपन डेटा)"
+  },
+  "privacyPermNominatim": {
+    "message": "nominatim.openstreetmap.org -- शहर जियोकोडिंग (केवल खोज करते समय)"
+  }
+}

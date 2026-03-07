@@ -1,0 +1,197 @@
+{
+  "appName": {
+    "message": "Free better Weather"
+  },
+  "appDescription": {
+    "message": "Clima ao vivo na barra de ferramentas do navegador. Temperatura, condicoes, vento -- tudo de relance. Privado, local, codigo aberto."
+  },
+  "appDefaultTitle": {
+    "message": "Free better Weather"
+  },
+
+  "labelLocation": {
+    "message": "Localizacao"
+  },
+  "placeholderSearchCity": {
+    "message": "Buscar cidade..."
+  },
+  "btnSearch": {
+    "message": "Buscar"
+  },
+  "btnSave": {
+    "message": "Salvar"
+  },
+  "btnRefresh": {
+    "message": "Atualizar"
+  },
+  "labelDisplayMode": {
+    "message": "Exibicao"
+  },
+  "modeSymbolBadge": {
+    "message": "Simbolo + Temp"
+  },
+  "modeSymbol": {
+    "message": "Somente simbolo"
+  },
+  "modeBadgeOnly": {
+    "message": "Somente temp"
+  },
+  "labelInterval": {
+    "message": "Intervalo de atualizacao"
+  },
+  "noLocation": {
+    "message": "Nenhuma localizacao definida"
+  },
+  "searchNoResults": {
+    "message": "Sem resultados"
+  },
+  "statusSaved": {
+    "message": "Salvo"
+  },
+  "statusUpdated": {
+    "message": "Atualizado"
+  },
+  "statusError": {
+    "message": "Erro"
+  },
+  "humidity": {
+    "message": "Umidade"
+  },
+  "wind": {
+    "message": "Vento"
+  },
+  "clouds": {
+    "message": "Nuvens"
+  },
+  "recommended": {
+    "message": "recomendado"
+  },
+  "minutes5": {
+    "message": "5 minutos"
+  },
+  "minutes10": {
+    "message": "10 minutos"
+  },
+  "minutes15": {
+    "message": "15 minutos"
+  },
+  "minutes30": {
+    "message": "30 minutos"
+  },
+  "minutes60": {
+    "message": "60 minutos"
+  },
+  "footerCopyright": {
+    "message": "(c) $1 HalloWelt42",
+    "placeholders": {
+      "1": { "content": "$1" }
+    }
+  },
+  "sayThanks": {
+    "message": "Agradecer"
+  },
+  "privacy": {
+    "message": "Privacidade"
+  },
+  "conditionDry": {
+    "message": "Seco"
+  },
+  "conditionFog": {
+    "message": "Neblina"
+  },
+  "conditionRain": {
+    "message": "Chuva"
+  },
+  "conditionSleet": {
+    "message": "Chuva congelante"
+  },
+  "conditionSnow": {
+    "message": "Neve"
+  },
+  "conditionHail": {
+    "message": "Granizo"
+  },
+  "conditionThunderstorm": {
+    "message": "Tempestade"
+  },
+  "conditionClear": {
+    "message": "Limpo"
+  },
+  "conditionCloudy": {
+    "message": "Nublado"
+  },
+  "conditionPartlyCloudy": {
+    "message": "Parcialmente nublado"
+  },
+  "conditionWind": {
+    "message": "Ventoso"
+  },
+  "searchingCity": {
+    "message": "Buscando..."
+  },
+  "removeLocation": {
+    "message": "Remover"
+  },
+  "dataSource": {
+    "message": "Dados: DWD via Bright Sky API"
+  },
+
+  "pageTitle_donate": {
+    "message": "Agradecer"
+  },
+  "donateHeadline": {
+    "message": "Feito com amor"
+  },
+  "donateIntro": {
+    "message": "Se voce gosta desta extensao, pode me pagar um cafe ou enviar uma pequena doacao em criptomoeda."
+  },
+  "donateBtnKofi": {
+    "message": "Me pague um cafe"
+  },
+  "donateCryptoTitle": {
+    "message": "Crypto"
+  },
+  "donateCopyBtn": {
+    "message": "Copiar"
+  },
+  "donateCopied": {
+    "message": "Copiado!"
+  },
+  "donateThanks": {
+    "message": "Obrigado pelo seu apoio!"
+  },
+
+  "pageTitle_privacy": {
+    "message": "Politica de privacidade"
+  },
+  "privacyIntro": {
+    "message": "Esta extensao respeita sua privacidade. Todos os dados sao armazenados localmente."
+  },
+  "privacyStorageTitle": {
+    "message": "Dados armazenados"
+  },
+  "privacyStorageText": {
+    "message": "Preferencias de localizacao, dados meteorologicos em cache e configuracoes de exibicao sao armazenados localmente no Chrome Storage. Nada e enviado ao desenvolvedor."
+  },
+  "privacyNetworkTitle": {
+    "message": "Requisicoes de rede"
+  },
+  "privacyNetworkText": {
+    "message": "A extensao contata apenas dois servicos: api.brightsky.dev para dados meteorologicos (dados abertos do DWD) e nominatim.openstreetmap.org para geocodificacao de cidades (apenas ao buscar). Sem rastreamento, sem analiticos."
+  },
+  "privacyPermissionsTitle": {
+    "message": "Permissoes"
+  },
+  "privacyPermStorage": {
+    "message": "storage -- Armazenamento local de configuracoes e dados meteorologicos em cache"
+  },
+  "privacyPermAlarms": {
+    "message": "alarms -- Atualizacoes meteorologicas periodicas em segundo plano"
+  },
+  "privacyPermBrightsky": {
+    "message": "api.brightsky.dev -- Obtencao do clima atual (dados abertos do DWD)"
+  },
+  "privacyPermNominatim": {
+    "message": "nominatim.openstreetmap.org -- Geocodificacao de cidades (apenas ao buscar)"
+  }
+}

@@ -1,0 +1,197 @@
+{
+  "appName": {
+    "message": "Free better Weather"
+  },
+  "appDescription": {
+    "message": "طقس مباشر في شريط ادوات المتصفح. درجة الحرارة، الاحوال الجوية، الرياح -- كل شيء بلمحة. خاص، محلي، مفتوح المصدر."
+  },
+  "appDefaultTitle": {
+    "message": "Free better Weather"
+  },
+
+  "labelLocation": {
+    "message": "الموقع"
+  },
+  "placeholderSearchCity": {
+    "message": "البحث عن مدينة..."
+  },
+  "btnSearch": {
+    "message": "بحث"
+  },
+  "btnSave": {
+    "message": "حفظ"
+  },
+  "btnRefresh": {
+    "message": "تحديث"
+  },
+  "labelDisplayMode": {
+    "message": "العرض"
+  },
+  "modeSymbolBadge": {
+    "message": "رمز + درجة الحرارة"
+  },
+  "modeSymbol": {
+    "message": "رمز فقط"
+  },
+  "modeBadgeOnly": {
+    "message": "درجة الحرارة فقط"
+  },
+  "labelInterval": {
+    "message": "فترة التحديث"
+  },
+  "noLocation": {
+    "message": "لم يتم تعيين موقع"
+  },
+  "searchNoResults": {
+    "message": "لا توجد نتائج"
+  },
+  "statusSaved": {
+    "message": "تم الحفظ"
+  },
+  "statusUpdated": {
+    "message": "تم التحديث"
+  },
+  "statusError": {
+    "message": "خطا"
+  },
+  "humidity": {
+    "message": "الرطوبة"
+  },
+  "wind": {
+    "message": "الرياح"
+  },
+  "clouds": {
+    "message": "الغيوم"
+  },
+  "recommended": {
+    "message": "موصى به"
+  },
+  "minutes5": {
+    "message": "5 دقائق"
+  },
+  "minutes10": {
+    "message": "10 دقائق"
+  },
+  "minutes15": {
+    "message": "15 دقيقة"
+  },
+  "minutes30": {
+    "message": "30 دقيقة"
+  },
+  "minutes60": {
+    "message": "60 دقيقة"
+  },
+  "footerCopyright": {
+    "message": "(c) $1 HalloWelt42",
+    "placeholders": {
+      "1": { "content": "$1" }
+    }
+  },
+  "sayThanks": {
+    "message": "شكر"
+  },
+  "privacy": {
+    "message": "الخصوصية"
+  },
+  "conditionDry": {
+    "message": "جاف"
+  },
+  "conditionFog": {
+    "message": "ضباب"
+  },
+  "conditionRain": {
+    "message": "مطر"
+  },
+  "conditionSleet": {
+    "message": "مطر متجمد"
+  },
+  "conditionSnow": {
+    "message": "ثلج"
+  },
+  "conditionHail": {
+    "message": "برد"
+  },
+  "conditionThunderstorm": {
+    "message": "عاصفة رعدية"
+  },
+  "conditionClear": {
+    "message": "صافي"
+  },
+  "conditionCloudy": {
+    "message": "غائم"
+  },
+  "conditionPartlyCloudy": {
+    "message": "غائم جزئيا"
+  },
+  "conditionWind": {
+    "message": "عاصف"
+  },
+  "searchingCity": {
+    "message": "جاري البحث..."
+  },
+  "removeLocation": {
+    "message": "ازالة"
+  },
+  "dataSource": {
+    "message": "البيانات: DWD via Bright Sky API"
+  },
+
+  "pageTitle_donate": {
+    "message": "شكر"
+  },
+  "donateHeadline": {
+    "message": "صنع بحب"
+  },
+  "donateIntro": {
+    "message": "اذا اعجبتك هذه الاضافة، يمكنك شراء قهوة لي او ارسال تبرع صغير بالعملات المشفرة."
+  },
+  "donateBtnKofi": {
+    "message": "اشتر لي قهوة"
+  },
+  "donateCryptoTitle": {
+    "message": "Crypto"
+  },
+  "donateCopyBtn": {
+    "message": "نسخ"
+  },
+  "donateCopied": {
+    "message": "تم النسخ!"
+  },
+  "donateThanks": {
+    "message": "شكرا لدعمك!"
+  },
+
+  "pageTitle_privacy": {
+    "message": "سياسة الخصوصية"
+  },
+  "privacyIntro": {
+    "message": "تحترم هذه الاضافة خصوصيتك. جميع البيانات مخزنة محليا."
+  },
+  "privacyStorageTitle": {
+    "message": "البيانات المخزنة"
+  },
+  "privacyStorageText": {
+    "message": "تفضيلات الموقع وبيانات الطقس المخزنة مؤقتا واعدادات العرض مخزنة محليا في Chrome Storage. لا يتم ارسال اي شيء الى المطور."
+  },
+  "privacyNetworkTitle": {
+    "message": "طلبات الشبكة"
+  },
+  "privacyNetworkText": {
+    "message": "تتصل الاضافة بخدمتين فقط: api.brightsky.dev لبيانات الطقس (بيانات DWD المفتوحة) وnominatim.openstreetmap.org للترميز الجغرافي للمدن (عند البحث فقط). بدون تتبع، بدون تحليلات."
+  },
+  "privacyPermissionsTitle": {
+    "message": "الاذونات"
+  },
+  "privacyPermStorage": {
+    "message": "storage -- تخزين محلي للاعدادات وبيانات الطقس المخزنة مؤقتا"
+  },
+  "privacyPermAlarms": {
+    "message": "alarms -- تحديثات طقس دورية في الخلفية"
+  },
+  "privacyPermBrightsky": {
+    "message": "api.brightsky.dev -- جلب الطقس الحالي (بيانات DWD المفتوحة)"
+  },
+  "privacyPermNominatim": {
+    "message": "nominatim.openstreetmap.org -- الترميز الجغرافي للمدن (عند البحث فقط)"
+  }
+}

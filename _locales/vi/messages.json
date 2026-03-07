@@ -1,0 +1,197 @@
+{
+  "appName": {
+    "message": "Free better Weather"
+  },
+  "appDescription": {
+    "message": "Thoi tiet truc tiep tren thanh cong cu trinh duyet. Nhiet do, dieu kien, gio -- tat ca trong mot cai nhin. Rieng tu, cuc bo, ma nguon mo."
+  },
+  "appDefaultTitle": {
+    "message": "Free better Weather"
+  },
+
+  "labelLocation": {
+    "message": "Vi tri"
+  },
+  "placeholderSearchCity": {
+    "message": "Tim thanh pho..."
+  },
+  "btnSearch": {
+    "message": "Tim"
+  },
+  "btnSave": {
+    "message": "Luu"
+  },
+  "btnRefresh": {
+    "message": "Lam moi"
+  },
+  "labelDisplayMode": {
+    "message": "Hien thi"
+  },
+  "modeSymbolBadge": {
+    "message": "Bieu tuong + Nhiet do"
+  },
+  "modeSymbol": {
+    "message": "Chi bieu tuong"
+  },
+  "modeBadgeOnly": {
+    "message": "Chi nhiet do"
+  },
+  "labelInterval": {
+    "message": "Khoang thoi gian cap nhat"
+  },
+  "noLocation": {
+    "message": "Chua dat vi tri"
+  },
+  "searchNoResults": {
+    "message": "Khong co ket qua"
+  },
+  "statusSaved": {
+    "message": "Da luu"
+  },
+  "statusUpdated": {
+    "message": "Da cap nhat"
+  },
+  "statusError": {
+    "message": "Loi"
+  },
+  "humidity": {
+    "message": "Do am"
+  },
+  "wind": {
+    "message": "Gio"
+  },
+  "clouds": {
+    "message": "May"
+  },
+  "recommended": {
+    "message": "khuyen nghi"
+  },
+  "minutes5": {
+    "message": "5 phut"
+  },
+  "minutes10": {
+    "message": "10 phut"
+  },
+  "minutes15": {
+    "message": "15 phut"
+  },
+  "minutes30": {
+    "message": "30 phut"
+  },
+  "minutes60": {
+    "message": "60 phut"
+  },
+  "footerCopyright": {
+    "message": "(c) $1 HalloWelt42",
+    "placeholders": {
+      "1": { "content": "$1" }
+    }
+  },
+  "sayThanks": {
+    "message": "Cam on"
+  },
+  "privacy": {
+    "message": "Quyen rieng tu"
+  },
+  "conditionDry": {
+    "message": "Kho"
+  },
+  "conditionFog": {
+    "message": "Suong mu"
+  },
+  "conditionRain": {
+    "message": "Mua"
+  },
+  "conditionSleet": {
+    "message": "Mua tuyet"
+  },
+  "conditionSnow": {
+    "message": "Tuyet"
+  },
+  "conditionHail": {
+    "message": "Mua da"
+  },
+  "conditionThunderstorm": {
+    "message": "Dong bao"
+  },
+  "conditionClear": {
+    "message": "Quang dang"
+  },
+  "conditionCloudy": {
+    "message": "Nhieu may"
+  },
+  "conditionPartlyCloudy": {
+    "message": "Co may mot phan"
+  },
+  "conditionWind": {
+    "message": "Gio manh"
+  },
+  "searchingCity": {
+    "message": "Dang tim..."
+  },
+  "removeLocation": {
+    "message": "Xoa"
+  },
+  "dataSource": {
+    "message": "Du lieu: DWD via Bright Sky API"
+  },
+
+  "pageTitle_donate": {
+    "message": "Cam on"
+  },
+  "donateHeadline": {
+    "message": "Lam voi tinh yeu"
+  },
+  "donateIntro": {
+    "message": "Neu ban thich tien ich mo rong nay, ban co the mua cho toi mot ly ca phe hoac gui mot khoan quyen gop nho bang tien dien tu."
+  },
+  "donateBtnKofi": {
+    "message": "Mua cho toi ca phe"
+  },
+  "donateCryptoTitle": {
+    "message": "Crypto"
+  },
+  "donateCopyBtn": {
+    "message": "Sao chep"
+  },
+  "donateCopied": {
+    "message": "Da sao chep!"
+  },
+  "donateThanks": {
+    "message": "Cam on su ung ho cua ban!"
+  },
+
+  "pageTitle_privacy": {
+    "message": "Chinh sach quyen rieng tu"
+  },
+  "privacyIntro": {
+    "message": "Tien ich mo rong nay ton trong quyen rieng tu cua ban. Tat ca du lieu duoc luu tru cuc bo."
+  },
+  "privacyStorageTitle": {
+    "message": "Du lieu luu tru"
+  },
+  "privacyStorageText": {
+    "message": "Tuy chon vi tri, du lieu thoi tiet da luu vao bo nho dem va cai dat hien thi duoc luu tru cuc bo trong Chrome Storage. Khong gi duoc gui den nha phat trien."
+  },
+  "privacyNetworkTitle": {
+    "message": "Yeu cau mang"
+  },
+  "privacyNetworkText": {
+    "message": "Tien ich mo rong chi lien he hai dich vu: api.brightsky.dev de lay du lieu thoi tiet (du lieu mo DWD) va nominatim.openstreetmap.org de ma hoa dia ly thanh pho (chi khi tim kiem). Khong theo doi, khong phan tich."
+  },
+  "privacyPermissionsTitle": {
+    "message": "Quyen"
+  },
+  "privacyPermStorage": {
+    "message": "storage -- Luu tru cuc bo cai dat va du lieu thoi tiet da luu vao bo nho dem"
+  },
+  "privacyPermAlarms": {
+    "message": "alarms -- Cap nhat thoi tiet dinh ky trong nen"
+  },
+  "privacyPermBrightsky": {
+    "message": "api.brightsky.dev -- Lay thoi tiet hien tai (du lieu mo DWD)"
+  },
+  "privacyPermNominatim": {
+    "message": "nominatim.openstreetmap.org -- Ma hoa dia ly thanh pho (chi khi tim kiem)"
+  }
+}

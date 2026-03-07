@@ -1,0 +1,197 @@
+{
+  "appName": {
+    "message": "Free better Weather"
+  },
+  "appDescription": {
+    "message": "Live weather in your browser toolbar. Temperature, conditions, wind -- all at a glance. Private, local, open source."
+  },
+  "appDefaultTitle": {
+    "message": "Free better Weather"
+  },
+
+  "labelLocation": {
+    "message": "Location"
+  },
+  "placeholderSearchCity": {
+    "message": "Search city..."
+  },
+  "btnSearch": {
+    "message": "Search"
+  },
+  "btnSave": {
+    "message": "Save"
+  },
+  "btnRefresh": {
+    "message": "Refresh"
+  },
+  "labelDisplayMode": {
+    "message": "Display"
+  },
+  "modeSymbolBadge": {
+    "message": "Symbol + Temp"
+  },
+  "modeSymbol": {
+    "message": "Symbol only"
+  },
+  "modeBadgeOnly": {
+    "message": "Temp only"
+  },
+  "labelInterval": {
+    "message": "Update interval"
+  },
+  "noLocation": {
+    "message": "No location set"
+  },
+  "searchNoResults": {
+    "message": "No results"
+  },
+  "statusSaved": {
+    "message": "Saved"
+  },
+  "statusUpdated": {
+    "message": "Updated"
+  },
+  "statusError": {
+    "message": "Error"
+  },
+  "humidity": {
+    "message": "Humidity"
+  },
+  "wind": {
+    "message": "Wind"
+  },
+  "clouds": {
+    "message": "Clouds"
+  },
+  "recommended": {
+    "message": "recommended"
+  },
+  "minutes5": {
+    "message": "5 minutes"
+  },
+  "minutes10": {
+    "message": "10 minutes"
+  },
+  "minutes15": {
+    "message": "15 minutes"
+  },
+  "minutes30": {
+    "message": "30 minutes"
+  },
+  "minutes60": {
+    "message": "60 minutes"
+  },
+  "footerCopyright": {
+    "message": "(c) $1 HalloWelt42",
+    "placeholders": {
+      "1": { "content": "$1" }
+    }
+  },
+  "sayThanks": {
+    "message": "Say thanks"
+  },
+  "privacy": {
+    "message": "Privacy"
+  },
+  "conditionDry": {
+    "message": "Dry"
+  },
+  "conditionFog": {
+    "message": "Fog"
+  },
+  "conditionRain": {
+    "message": "Rain"
+  },
+  "conditionSleet": {
+    "message": "Sleet"
+  },
+  "conditionSnow": {
+    "message": "Snow"
+  },
+  "conditionHail": {
+    "message": "Hail"
+  },
+  "conditionThunderstorm": {
+    "message": "Thunderstorm"
+  },
+  "conditionClear": {
+    "message": "Clear"
+  },
+  "conditionCloudy": {
+    "message": "Cloudy"
+  },
+  "conditionPartlyCloudy": {
+    "message": "Partly cloudy"
+  },
+  "conditionWind": {
+    "message": "Windy"
+  },
+  "searchingCity": {
+    "message": "Searching..."
+  },
+  "removeLocation": {
+    "message": "Remove"
+  },
+  "dataSource": {
+    "message": "Data: DWD via Bright Sky API"
+  },
+
+  "pageTitle_donate": {
+    "message": "Say thanks"
+  },
+  "donateHeadline": {
+    "message": "Made with Love"
+  },
+  "donateIntro": {
+    "message": "If you like this extension, you can buy me a coffee or send a small crypto donation."
+  },
+  "donateBtnKofi": {
+    "message": "Buy me a Coffee"
+  },
+  "donateCryptoTitle": {
+    "message": "Crypto"
+  },
+  "donateCopyBtn": {
+    "message": "Copy"
+  },
+  "donateCopied": {
+    "message": "Copied!"
+  },
+  "donateThanks": {
+    "message": "Thanks for your support!"
+  },
+
+  "pageTitle_privacy": {
+    "message": "Privacy Policy"
+  },
+  "privacyIntro": {
+    "message": "This extension respects your privacy. All data is stored locally."
+  },
+  "privacyStorageTitle": {
+    "message": "Stored Data"
+  },
+  "privacyStorageText": {
+    "message": "Location preferences, cached weather data, and display settings are stored locally in Chrome Storage. Nothing is sent to the developer."
+  },
+  "privacyNetworkTitle": {
+    "message": "Network Requests"
+  },
+  "privacyNetworkText": {
+    "message": "The extension contacts only two services: api.brightsky.dev for weather data (DWD open data) and nominatim.openstreetmap.org for city geocoding (only when you search). No tracking, no analytics."
+  },
+  "privacyPermissionsTitle": {
+    "message": "Permissions"
+  },
+  "privacyPermStorage": {
+    "message": "storage -- Local storage of settings and cached weather"
+  },
+  "privacyPermAlarms": {
+    "message": "alarms -- Periodic weather updates in background"
+  },
+  "privacyPermBrightsky": {
+    "message": "api.brightsky.dev -- Fetching current weather (DWD open data)"
+  },
+  "privacyPermNominatim": {
+    "message": "nominatim.openstreetmap.org -- City geocoding (only on search)"
+  }
+}

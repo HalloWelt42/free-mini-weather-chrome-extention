@@ -1,0 +1,197 @@
+{
+  "appName": {
+    "message": "Free better Weather"
+  },
+  "appDescription": {
+    "message": "Tarayici arac cubugunda canli hava durumu. Sicaklik, kosullar, ruzgar -- hepsi bir bakista. Ozel, yerel, acik kaynak."
+  },
+  "appDefaultTitle": {
+    "message": "Free better Weather"
+  },
+
+  "labelLocation": {
+    "message": "Konum"
+  },
+  "placeholderSearchCity": {
+    "message": "Sehir ara..."
+  },
+  "btnSearch": {
+    "message": "Ara"
+  },
+  "btnSave": {
+    "message": "Kaydet"
+  },
+  "btnRefresh": {
+    "message": "Yenile"
+  },
+  "labelDisplayMode": {
+    "message": "Gorunum"
+  },
+  "modeSymbolBadge": {
+    "message": "Sembol + Sicaklik"
+  },
+  "modeSymbol": {
+    "message": "Yalnizca sembol"
+  },
+  "modeBadgeOnly": {
+    "message": "Yalnizca sicaklik"
+  },
+  "labelInterval": {
+    "message": "Guncelleme araligi"
+  },
+  "noLocation": {
+    "message": "Konum ayarlanmadi"
+  },
+  "searchNoResults": {
+    "message": "Sonuc bulunamadi"
+  },
+  "statusSaved": {
+    "message": "Kaydedildi"
+  },
+  "statusUpdated": {
+    "message": "Guncellendi"
+  },
+  "statusError": {
+    "message": "Hata"
+  },
+  "humidity": {
+    "message": "Nem"
+  },
+  "wind": {
+    "message": "Ruzgar"
+  },
+  "clouds": {
+    "message": "Bulutlar"
+  },
+  "recommended": {
+    "message": "onerilen"
+  },
+  "minutes5": {
+    "message": "5 dakika"
+  },
+  "minutes10": {
+    "message": "10 dakika"
+  },
+  "minutes15": {
+    "message": "15 dakika"
+  },
+  "minutes30": {
+    "message": "30 dakika"
+  },
+  "minutes60": {
+    "message": "60 dakika"
+  },
+  "footerCopyright": {
+    "message": "(c) $1 HalloWelt42",
+    "placeholders": {
+      "1": { "content": "$1" }
+    }
+  },
+  "sayThanks": {
+    "message": "Tesekkur et"
+  },
+  "privacy": {
+    "message": "Gizlilik"
+  },
+  "conditionDry": {
+    "message": "Kuru"
+  },
+  "conditionFog": {
+    "message": "Sis"
+  },
+  "conditionRain": {
+    "message": "Yagmur"
+  },
+  "conditionSleet": {
+    "message": "Karla karisik yagmur"
+  },
+  "conditionSnow": {
+    "message": "Kar"
+  },
+  "conditionHail": {
+    "message": "Dolu"
+  },
+  "conditionThunderstorm": {
+    "message": "Firtina"
+  },
+  "conditionClear": {
+    "message": "Acik"
+  },
+  "conditionCloudy": {
+    "message": "Bulutlu"
+  },
+  "conditionPartlyCloudy": {
+    "message": "Parcali bulutlu"
+  },
+  "conditionWind": {
+    "message": "Ruzgarli"
+  },
+  "searchingCity": {
+    "message": "Araniyor..."
+  },
+  "removeLocation": {
+    "message": "Kaldir"
+  },
+  "dataSource": {
+    "message": "Veri: DWD via Bright Sky API"
+  },
+
+  "pageTitle_donate": {
+    "message": "Tesekkur et"
+  },
+  "donateHeadline": {
+    "message": "Sevgiyle yapildi"
+  },
+  "donateIntro": {
+    "message": "Bu eklentiyi begendiyseniz, bana bir kahve ismarlatabilir veya kucuk bir kripto para bagisi gonderebilirsiniz."
+  },
+  "donateBtnKofi": {
+    "message": "Bana bir kahve ismarla"
+  },
+  "donateCryptoTitle": {
+    "message": "Crypto"
+  },
+  "donateCopyBtn": {
+    "message": "Kopyala"
+  },
+  "donateCopied": {
+    "message": "Kopyalandi!"
+  },
+  "donateThanks": {
+    "message": "Desteginiz icin tesekkurler!"
+  },
+
+  "pageTitle_privacy": {
+    "message": "Gizlilik Politikasi"
+  },
+  "privacyIntro": {
+    "message": "Bu eklenti gizliliginize saygi duyar. Tum veriler yerel olarak depolanir."
+  },
+  "privacyStorageTitle": {
+    "message": "Depolanan Veriler"
+  },
+  "privacyStorageText": {
+    "message": "Konum tercihleri, onbellege alinmis hava durumu verileri ve gorunum ayarlari Chrome Storage'da yerel olarak depolanir. Gelistiriciye hicbir sey gonderilmez."
+  },
+  "privacyNetworkTitle": {
+    "message": "Ag Istekleri"
+  },
+  "privacyNetworkText": {
+    "message": "Eklenti yalnizca iki hizmetle iletisim kurar: hava durumu verileri icin api.brightsky.dev (DWD acik veri) ve sehir cografi kodlamasi icin nominatim.openstreetmap.org (yalnizca arama sirasinda). Izleme yok, analitik yok."
+  },
+  "privacyPermissionsTitle": {
+    "message": "Izinler"
+  },
+  "privacyPermStorage": {
+    "message": "storage -- Ayarlarin ve onbellege alinmis hava durumu verilerinin yerel depolanmasi"
+  },
+  "privacyPermAlarms": {
+    "message": "alarms -- Arka planda periyodik hava durumu guncellemeleri"
+  },
+  "privacyPermBrightsky": {
+    "message": "api.brightsky.dev -- Guncel hava durumunu alma (DWD acik veri)"
+  },
+  "privacyPermNominatim": {
+    "message": "nominatim.openstreetmap.org -- Sehir cografi kodlamasi (yalnizca arama sirasinda)"
+  }
+}

@@ -1,0 +1,197 @@
+{
+  "appName": {
+    "message": "Free better Weather"
+  },
+  "appDescription": {
+    "message": "สภาพอากาศแบบสดในแถบเครื่องมือเบราว์เซอร์ อุณหภูมิ, สภาพอากาศ, ลม -- ทุกอย่างในพริบตา ส่วนตัว, ท้องถิ่น, โอเพนซอร์ส"
+  },
+  "appDefaultTitle": {
+    "message": "Free better Weather"
+  },
+
+  "labelLocation": {
+    "message": "ตำแหน่ง"
+  },
+  "placeholderSearchCity": {
+    "message": "ค้นหาเมือง..."
+  },
+  "btnSearch": {
+    "message": "ค้นหา"
+  },
+  "btnSave": {
+    "message": "บันทึก"
+  },
+  "btnRefresh": {
+    "message": "รีเฟรช"
+  },
+  "labelDisplayMode": {
+    "message": "การแสดงผล"
+  },
+  "modeSymbolBadge": {
+    "message": "สัญลักษณ์ + อุณหภูมิ"
+  },
+  "modeSymbol": {
+    "message": "สัญลักษณ์เท่านั้น"
+  },
+  "modeBadgeOnly": {
+    "message": "อุณหภูมิเท่านั้น"
+  },
+  "labelInterval": {
+    "message": "ช่วงเวลาอัปเดต"
+  },
+  "noLocation": {
+    "message": "ยังไม่ได้ตั้งค่าตำแหน่ง"
+  },
+  "searchNoResults": {
+    "message": "ไม่พบผลลัพธ์"
+  },
+  "statusSaved": {
+    "message": "บันทึกแล้ว"
+  },
+  "statusUpdated": {
+    "message": "อัปเดตแล้ว"
+  },
+  "statusError": {
+    "message": "ข้อผิดพลาด"
+  },
+  "humidity": {
+    "message": "ความชื้น"
+  },
+  "wind": {
+    "message": "ลม"
+  },
+  "clouds": {
+    "message": "เมฆ"
+  },
+  "recommended": {
+    "message": "แนะนำ"
+  },
+  "minutes5": {
+    "message": "5 นาที"
+  },
+  "minutes10": {
+    "message": "10 นาที"
+  },
+  "minutes15": {
+    "message": "15 นาที"
+  },
+  "minutes30": {
+    "message": "30 นาที"
+  },
+  "minutes60": {
+    "message": "60 นาที"
+  },
+  "footerCopyright": {
+    "message": "(c) $1 HalloWelt42",
+    "placeholders": {
+      "1": { "content": "$1" }
+    }
+  },
+  "sayThanks": {
+    "message": "ขอบคุณ"
+  },
+  "privacy": {
+    "message": "ความเป็นส่วนตัว"
+  },
+  "conditionDry": {
+    "message": "แห้ง"
+  },
+  "conditionFog": {
+    "message": "หมอก"
+  },
+  "conditionRain": {
+    "message": "ฝน"
+  },
+  "conditionSleet": {
+    "message": "ฝนปนหิมะ"
+  },
+  "conditionSnow": {
+    "message": "หิมะ"
+  },
+  "conditionHail": {
+    "message": "ลูกเห็บ"
+  },
+  "conditionThunderstorm": {
+    "message": "พายุฝนฟ้าคะนอง"
+  },
+  "conditionClear": {
+    "message": "ท้องฟ้าแจ่มใส"
+  },
+  "conditionCloudy": {
+    "message": "มีเมฆมาก"
+  },
+  "conditionPartlyCloudy": {
+    "message": "มีเมฆบางส่วน"
+  },
+  "conditionWind": {
+    "message": "ลมแรง"
+  },
+  "searchingCity": {
+    "message": "กำลังค้นหา..."
+  },
+  "removeLocation": {
+    "message": "ลบ"
+  },
+  "dataSource": {
+    "message": "ข้อมูล: DWD via Bright Sky API"
+  },
+
+  "pageTitle_donate": {
+    "message": "ขอบคุณ"
+  },
+  "donateHeadline": {
+    "message": "สร้างด้วยความรัก"
+  },
+  "donateIntro": {
+    "message": "หากคุณชอบส่วนขยายนี้ คุณสามารถเลี้ยงกาแฟหรือส่งบริจาคเล็กน้อยในสกุลเงินดิจิทัล"
+  },
+  "donateBtnKofi": {
+    "message": "เลี้ยงกาแฟ"
+  },
+  "donateCryptoTitle": {
+    "message": "Crypto"
+  },
+  "donateCopyBtn": {
+    "message": "คัดลอก"
+  },
+  "donateCopied": {
+    "message": "คัดลอกแล้ว!"
+  },
+  "donateThanks": {
+    "message": "ขอบคุณสำหรับการสนับสนุน!"
+  },
+
+  "pageTitle_privacy": {
+    "message": "นโยบายความเป็นส่วนตัว"
+  },
+  "privacyIntro": {
+    "message": "ส่วนขยายนี้เคารพความเป็นส่วนตัวของคุณ ข้อมูลทั้งหมดจัดเก็บในเครื่อง"
+  },
+  "privacyStorageTitle": {
+    "message": "ข้อมูลที่จัดเก็บ"
+  },
+  "privacyStorageText": {
+    "message": "การตั้งค่าตำแหน่ง, ข้อมูลสภาพอากาศที่แคช และการตั้งค่าการแสดงผลจัดเก็บในเครื่องใน Chrome Storage ไม่มีข้อมูลใดถูกส่งไปยังนักพัฒนา"
+  },
+  "privacyNetworkTitle": {
+    "message": "คำขอเครือข่าย"
+  },
+  "privacyNetworkText": {
+    "message": "ส่วนขยายติดต่อเพียงสองบริการ: api.brightsky.dev สำหรับข้อมูลสภาพอากาศ (ข้อมูลเปิด DWD) และ nominatim.openstreetmap.org สำหรับการระบุพิกัดเมือง (เฉพาะเมื่อค้นหา) ไม่มีการติดตาม ไม่มีการวิเคราะห์"
+  },
+  "privacyPermissionsTitle": {
+    "message": "สิทธิ์"
+  },
+  "privacyPermStorage": {
+    "message": "storage -- จัดเก็บการตั้งค่าและข้อมูลสภาพอากาศที่แคชในเครื่อง"
+  },
+  "privacyPermAlarms": {
+    "message": "alarms -- อัปเดตสภาพอากาศเป็นระยะในพื้นหลัง"
+  },
+  "privacyPermBrightsky": {
+    "message": "api.brightsky.dev -- ดึงข้อมูลสภาพอากาศปัจจุบัน (ข้อมูลเปิด DWD)"
+  },
+  "privacyPermNominatim": {
+    "message": "nominatim.openstreetmap.org -- ระบุพิกัดเมือง (เฉพาะเมื่อค้นหา)"
+  }
+}

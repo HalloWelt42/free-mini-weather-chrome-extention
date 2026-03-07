@@ -1,0 +1,197 @@
+{
+  "appName": {
+    "message": "Free better Weather"
+  },
+  "appDescription": {
+    "message": "瀏覽器工具列中的即時天氣。溫度、天候、風力 -- 一目瞭然。隱私、本地、開源。"
+  },
+  "appDefaultTitle": {
+    "message": "Free better Weather"
+  },
+
+  "labelLocation": {
+    "message": "位置"
+  },
+  "placeholderSearchCity": {
+    "message": "搜尋城市..."
+  },
+  "btnSearch": {
+    "message": "搜尋"
+  },
+  "btnSave": {
+    "message": "儲存"
+  },
+  "btnRefresh": {
+    "message": "重新整理"
+  },
+  "labelDisplayMode": {
+    "message": "顯示"
+  },
+  "modeSymbolBadge": {
+    "message": "圖示 + 溫度"
+  },
+  "modeSymbol": {
+    "message": "僅圖示"
+  },
+  "modeBadgeOnly": {
+    "message": "僅溫度"
+  },
+  "labelInterval": {
+    "message": "更新間隔"
+  },
+  "noLocation": {
+    "message": "未設定位置"
+  },
+  "searchNoResults": {
+    "message": "無結果"
+  },
+  "statusSaved": {
+    "message": "已儲存"
+  },
+  "statusUpdated": {
+    "message": "已更新"
+  },
+  "statusError": {
+    "message": "錯誤"
+  },
+  "humidity": {
+    "message": "濕度"
+  },
+  "wind": {
+    "message": "風"
+  },
+  "clouds": {
+    "message": "雲量"
+  },
+  "recommended": {
+    "message": "建議"
+  },
+  "minutes5": {
+    "message": "5 分鐘"
+  },
+  "minutes10": {
+    "message": "10 分鐘"
+  },
+  "minutes15": {
+    "message": "15 分鐘"
+  },
+  "minutes30": {
+    "message": "30 分鐘"
+  },
+  "minutes60": {
+    "message": "60 分鐘"
+  },
+  "footerCopyright": {
+    "message": "(c) $1 HalloWelt42",
+    "placeholders": {
+      "1": { "content": "$1" }
+    }
+  },
+  "sayThanks": {
+    "message": "致謝"
+  },
+  "privacy": {
+    "message": "隱私"
+  },
+  "conditionDry": {
+    "message": "乾燥"
+  },
+  "conditionFog": {
+    "message": "霧"
+  },
+  "conditionRain": {
+    "message": "雨"
+  },
+  "conditionSleet": {
+    "message": "雨夾雪"
+  },
+  "conditionSnow": {
+    "message": "雪"
+  },
+  "conditionHail": {
+    "message": "冰雹"
+  },
+  "conditionThunderstorm": {
+    "message": "雷暴"
+  },
+  "conditionClear": {
+    "message": "晴"
+  },
+  "conditionCloudy": {
+    "message": "多雲"
+  },
+  "conditionPartlyCloudy": {
+    "message": "局部多雲"
+  },
+  "conditionWind": {
+    "message": "強風"
+  },
+  "searchingCity": {
+    "message": "搜尋中..."
+  },
+  "removeLocation": {
+    "message": "移除"
+  },
+  "dataSource": {
+    "message": "資料: DWD via Bright Sky API"
+  },
+
+  "pageTitle_donate": {
+    "message": "致謝"
+  },
+  "donateHeadline": {
+    "message": "用心製作"
+  },
+  "donateIntro": {
+    "message": "如果您喜歡這個擴充功能，可以請我喝杯咖啡或發送一筆小額加密貨幣捐贈。"
+  },
+  "donateBtnKofi": {
+    "message": "請我喝咖啡"
+  },
+  "donateCryptoTitle": {
+    "message": "Crypto"
+  },
+  "donateCopyBtn": {
+    "message": "複製"
+  },
+  "donateCopied": {
+    "message": "已複製!"
+  },
+  "donateThanks": {
+    "message": "感謝您的支持!"
+  },
+
+  "pageTitle_privacy": {
+    "message": "隱私權政策"
+  },
+  "privacyIntro": {
+    "message": "此擴充功能尊重您的隱私。所有資料均儲存在本地。"
+  },
+  "privacyStorageTitle": {
+    "message": "儲存的資料"
+  },
+  "privacyStorageText": {
+    "message": "位置偏好、快取的天氣資料和顯示設定儲存在Chrome Storage本地。不會向開發者傳送任何內容。"
+  },
+  "privacyNetworkTitle": {
+    "message": "網路請求"
+  },
+  "privacyNetworkText": {
+    "message": "該擴充功能僅連接兩個服務: api.brightsky.dev用於天氣資料 (DWD開放資料) 和nominatim.openstreetmap.org用於城市地理編碼 (僅在搜尋時)。無追蹤、無分析。"
+  },
+  "privacyPermissionsTitle": {
+    "message": "權限"
+  },
+  "privacyPermStorage": {
+    "message": "storage -- 本地儲存設定和快取的天氣資料"
+  },
+  "privacyPermAlarms": {
+    "message": "alarms -- 背景定期更新天氣"
+  },
+  "privacyPermBrightsky": {
+    "message": "api.brightsky.dev -- 取得目前天氣 (DWD開放資料)"
+  },
+  "privacyPermNominatim": {
+    "message": "nominatim.openstreetmap.org -- 城市地理編碼 (僅在搜尋時)"
+  }
+}

@@ -1,0 +1,197 @@
+{
+  "appName": {
+    "message": "Free better Weather"
+  },
+  "appDescription": {
+    "message": "Cuaca langsung di bilah alat browser. Suhu, kondisi, angin -- semua dalam sekali lihat. Pribadi, lokal, sumber terbuka."
+  },
+  "appDefaultTitle": {
+    "message": "Free better Weather"
+  },
+
+  "labelLocation": {
+    "message": "Lokasi"
+  },
+  "placeholderSearchCity": {
+    "message": "Cari kota..."
+  },
+  "btnSearch": {
+    "message": "Cari"
+  },
+  "btnSave": {
+    "message": "Simpan"
+  },
+  "btnRefresh": {
+    "message": "Perbarui"
+  },
+  "labelDisplayMode": {
+    "message": "Tampilan"
+  },
+  "modeSymbolBadge": {
+    "message": "Simbol + Suhu"
+  },
+  "modeSymbol": {
+    "message": "Hanya simbol"
+  },
+  "modeBadgeOnly": {
+    "message": "Hanya suhu"
+  },
+  "labelInterval": {
+    "message": "Interval pembaruan"
+  },
+  "noLocation": {
+    "message": "Lokasi belum diatur"
+  },
+  "searchNoResults": {
+    "message": "Tidak ada hasil"
+  },
+  "statusSaved": {
+    "message": "Tersimpan"
+  },
+  "statusUpdated": {
+    "message": "Diperbarui"
+  },
+  "statusError": {
+    "message": "Kesalahan"
+  },
+  "humidity": {
+    "message": "Kelembapan"
+  },
+  "wind": {
+    "message": "Angin"
+  },
+  "clouds": {
+    "message": "Awan"
+  },
+  "recommended": {
+    "message": "disarankan"
+  },
+  "minutes5": {
+    "message": "5 menit"
+  },
+  "minutes10": {
+    "message": "10 menit"
+  },
+  "minutes15": {
+    "message": "15 menit"
+  },
+  "minutes30": {
+    "message": "30 menit"
+  },
+  "minutes60": {
+    "message": "60 menit"
+  },
+  "footerCopyright": {
+    "message": "(c) $1 HalloWelt42",
+    "placeholders": {
+      "1": { "content": "$1" }
+    }
+  },
+  "sayThanks": {
+    "message": "Ucapkan terima kasih"
+  },
+  "privacy": {
+    "message": "Privasi"
+  },
+  "conditionDry": {
+    "message": "Kering"
+  },
+  "conditionFog": {
+    "message": "Kabut"
+  },
+  "conditionRain": {
+    "message": "Hujan"
+  },
+  "conditionSleet": {
+    "message": "Hujan es"
+  },
+  "conditionSnow": {
+    "message": "Salju"
+  },
+  "conditionHail": {
+    "message": "Hujan es batu"
+  },
+  "conditionThunderstorm": {
+    "message": "Badai petir"
+  },
+  "conditionClear": {
+    "message": "Cerah"
+  },
+  "conditionCloudy": {
+    "message": "Mendung"
+  },
+  "conditionPartlyCloudy": {
+    "message": "Berawan sebagian"
+  },
+  "conditionWind": {
+    "message": "Berangin"
+  },
+  "searchingCity": {
+    "message": "Mencari..."
+  },
+  "removeLocation": {
+    "message": "Hapus"
+  },
+  "dataSource": {
+    "message": "Data: DWD via Bright Sky API"
+  },
+
+  "pageTitle_donate": {
+    "message": "Ucapkan terima kasih"
+  },
+  "donateHeadline": {
+    "message": "Dibuat dengan cinta"
+  },
+  "donateIntro": {
+    "message": "Jika Anda menyukai ekstensi ini, Anda bisa mentraktir saya kopi atau mengirim donasi kecil dalam mata uang kripto."
+  },
+  "donateBtnKofi": {
+    "message": "Traktir saya kopi"
+  },
+  "donateCryptoTitle": {
+    "message": "Crypto"
+  },
+  "donateCopyBtn": {
+    "message": "Salin"
+  },
+  "donateCopied": {
+    "message": "Tersalin!"
+  },
+  "donateThanks": {
+    "message": "Terima kasih atas dukungan Anda!"
+  },
+
+  "pageTitle_privacy": {
+    "message": "Kebijakan Privasi"
+  },
+  "privacyIntro": {
+    "message": "Ekstensi ini menghormati privasi Anda. Semua data disimpan secara lokal."
+  },
+  "privacyStorageTitle": {
+    "message": "Data Tersimpan"
+  },
+  "privacyStorageText": {
+    "message": "Preferensi lokasi, data cuaca yang di-cache, dan pengaturan tampilan disimpan secara lokal di Chrome Storage. Tidak ada yang dikirim ke pengembang."
+  },
+  "privacyNetworkTitle": {
+    "message": "Permintaan Jaringan"
+  },
+  "privacyNetworkText": {
+    "message": "Ekstensi hanya menghubungi dua layanan: api.brightsky.dev untuk data cuaca (data terbuka DWD) dan nominatim.openstreetmap.org untuk geocoding kota (hanya saat pencarian). Tanpa pelacakan, tanpa analitik."
+  },
+  "privacyPermissionsTitle": {
+    "message": "Izin"
+  },
+  "privacyPermStorage": {
+    "message": "storage -- Penyimpanan lokal pengaturan dan data cuaca yang di-cache"
+  },
+  "privacyPermAlarms": {
+    "message": "alarms -- Pembaruan cuaca berkala di latar belakang"
+  },
+  "privacyPermBrightsky": {
+    "message": "api.brightsky.dev -- Mengambil cuaca saat ini (data terbuka DWD)"
+  },
+  "privacyPermNominatim": {
+    "message": "nominatim.openstreetmap.org -- Geocoding kota (hanya saat pencarian)"
+  }
+}

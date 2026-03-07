@@ -1,0 +1,197 @@
+{
+  "appName": {
+    "message": "Free better Weather"
+  },
+  "appDescription": {
+    "message": "Wetterdaten im Browser-Toolbar. Temperatur, Wetterlage, Wind -- alles auf einen Blick. Privat, lokal, Open Source."
+  },
+  "appDefaultTitle": {
+    "message": "Free better Weather"
+  },
+
+  "labelLocation": {
+    "message": "Standort"
+  },
+  "placeholderSearchCity": {
+    "message": "Stadt suchen..."
+  },
+  "btnSearch": {
+    "message": "Suchen"
+  },
+  "btnSave": {
+    "message": "Speichern"
+  },
+  "btnRefresh": {
+    "message": "Aktualisieren"
+  },
+  "labelDisplayMode": {
+    "message": "Anzeige"
+  },
+  "modeSymbolBadge": {
+    "message": "Symbol + Temp"
+  },
+  "modeSymbol": {
+    "message": "Nur Symbol"
+  },
+  "modeBadgeOnly": {
+    "message": "Nur Temp"
+  },
+  "labelInterval": {
+    "message": "Update-Intervall"
+  },
+  "noLocation": {
+    "message": "Kein Standort gesetzt"
+  },
+  "searchNoResults": {
+    "message": "Keine Ergebnisse"
+  },
+  "statusSaved": {
+    "message": "Gespeichert"
+  },
+  "statusUpdated": {
+    "message": "Aktualisiert"
+  },
+  "statusError": {
+    "message": "Fehler"
+  },
+  "humidity": {
+    "message": "Feuchtigkeit"
+  },
+  "wind": {
+    "message": "Wind"
+  },
+  "clouds": {
+    "message": "Wolken"
+  },
+  "recommended": {
+    "message": "empfohlen"
+  },
+  "minutes5": {
+    "message": "5 Minuten"
+  },
+  "minutes10": {
+    "message": "10 Minuten"
+  },
+  "minutes15": {
+    "message": "15 Minuten"
+  },
+  "minutes30": {
+    "message": "30 Minuten"
+  },
+  "minutes60": {
+    "message": "60 Minuten"
+  },
+  "footerCopyright": {
+    "message": "(c) $1 HalloWelt42",
+    "placeholders": {
+      "1": { "content": "$1" }
+    }
+  },
+  "sayThanks": {
+    "message": "Danke sagen"
+  },
+  "privacy": {
+    "message": "Datenschutz"
+  },
+  "conditionDry": {
+    "message": "Trocken"
+  },
+  "conditionFog": {
+    "message": "Nebel"
+  },
+  "conditionRain": {
+    "message": "Regen"
+  },
+  "conditionSleet": {
+    "message": "Schneeregen"
+  },
+  "conditionSnow": {
+    "message": "Schnee"
+  },
+  "conditionHail": {
+    "message": "Hagel"
+  },
+  "conditionThunderstorm": {
+    "message": "Gewitter"
+  },
+  "conditionClear": {
+    "message": "Klar"
+  },
+  "conditionCloudy": {
+    "message": "Bewölkt"
+  },
+  "conditionPartlyCloudy": {
+    "message": "Teilweise bewölkt"
+  },
+  "conditionWind": {
+    "message": "Windig"
+  },
+  "searchingCity": {
+    "message": "Suche..."
+  },
+  "removeLocation": {
+    "message": "Entfernen"
+  },
+  "dataSource": {
+    "message": "Daten: DWD via Bright Sky API"
+  },
+
+  "pageTitle_donate": {
+    "message": "Danke sagen"
+  },
+  "donateHeadline": {
+    "message": "Made with Love"
+  },
+  "donateIntro": {
+    "message": "Wenn dir diese Extension gefällt, kannst du mir einen Kaffee spendieren oder eine kleine Crypto-Spende senden."
+  },
+  "donateBtnKofi": {
+    "message": "Kaffee spendieren"
+  },
+  "donateCryptoTitle": {
+    "message": "Crypto"
+  },
+  "donateCopyBtn": {
+    "message": "Kopieren"
+  },
+  "donateCopied": {
+    "message": "Kopiert!"
+  },
+  "donateThanks": {
+    "message": "Danke für deine Unterstützung!"
+  },
+
+  "pageTitle_privacy": {
+    "message": "Datenschutz"
+  },
+  "privacyIntro": {
+    "message": "Diese Extension respektiert deine Privatsphäre. Alle Daten werden lokal gespeichert."
+  },
+  "privacyStorageTitle": {
+    "message": "Gespeicherte Daten"
+  },
+  "privacyStorageText": {
+    "message": "Standort-Einstellungen, gecachte Wetterdaten und Anzeige-Einstellungen werden lokal in Chrome Storage gespeichert. Nichts wird an den Entwickler gesendet."
+  },
+  "privacyNetworkTitle": {
+    "message": "Netzwerk-Anfragen"
+  },
+  "privacyNetworkText": {
+    "message": "Die Extension kontaktiert nur zwei Dienste: api.brightsky.dev für Wetterdaten (offene DWD-Daten) und nominatim.openstreetmap.org für Geocoding (nur bei Suche). Kein Tracking, keine Analytics."
+  },
+  "privacyPermissionsTitle": {
+    "message": "Berechtigungen"
+  },
+  "privacyPermStorage": {
+    "message": "storage -- Lokale Speicherung von Einstellungen und gecachten Wetterdaten"
+  },
+  "privacyPermAlarms": {
+    "message": "alarms -- Periodische Wetter-Updates im Hintergrund"
+  },
+  "privacyPermBrightsky": {
+    "message": "api.brightsky.dev -- Abruf aktueller Wetterdaten (offene DWD-Daten)"
+  },
+  "privacyPermNominatim": {
+    "message": "nominatim.openstreetmap.org -- Geocoding von Städtenamen (nur bei Suche)"
+  }
+}
