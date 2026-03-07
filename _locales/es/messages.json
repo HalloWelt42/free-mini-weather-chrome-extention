@@ -133,7 +133,7 @@
     "message": "Eliminar"
   },
   "dataSource": {
-    "message": "Datos: DWD via Bright Sky API"
+    "message": "Datos: Open-Meteo API"
   },
   "labelUnit": {
     "message": "Temperatura"
@@ -180,7 +180,7 @@
     "message": "Solicitudes de red"
   },
   "privacyNetworkText": {
-    "message": "La extension contacta solo dos servicios: api.brightsky.dev para datos meteorologicos (datos abiertos del DWD) y nominatim.openstreetmap.org para geocodificacion de ciudades (solo al buscar). Sin rastreo, sin analiticas."
+    "message": "La extension contacta solo dos servicios: api.open-meteo.com para datos meteorologicos (Open-Meteo) y nominatim.openstreetmap.org para geocodificacion de ciudades (solo al buscar). Sin rastreo, sin analiticas."
   },
   "privacyPermissionsTitle": {
     "message": "Permisos"
@@ -192,7 +192,7 @@
     "message": "alarms -- Actualizaciones meteorologicas periodicas en segundo plano"
   },
   "privacyPermBrightsky": {
-    "message": "api.brightsky.dev -- Obtencion del tiempo actual (datos abiertos del DWD)"
+    "message": "api.open-meteo.com -- Obtencion del tiempo actual (Open-Meteo)"
   },
   "privacyPermNominatim": {
     "message": "nominatim.openstreetmap.org -- Geocodificacion de ciudades (solo al buscar)"

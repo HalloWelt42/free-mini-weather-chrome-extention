@@ -133,7 +133,7 @@
     "message": "Удалить"
   },
   "dataSource": {
-    "message": "Данные: DWD via Bright Sky API"
+    "message": "Данные: Open-Meteo API"
   },
   "labelUnit": {
     "message": "Температура"
@@ -180,7 +180,7 @@
     "message": "Сетевые запросы"
   },
   "privacyNetworkText": {
-    "message": "Расширение связывается только с двумя сервисами: api.brightsky.dev для данных о погоде (открытые данные DWD) и nominatim.openstreetmap.org для геокодирования городов (только при поиске). Без отслеживания, без аналитики."
+    "message": "Расширение связывается только с двумя сервисами: api.open-meteo.com для данных о погоде (Open-Meteo) и nominatim.openstreetmap.org для геокодирования городов (только при поиске). Без отслеживания, без аналитики."
   },
   "privacyPermissionsTitle": {
     "message": "Разрешения"
@@ -192,7 +192,7 @@
     "message": "alarms -- Периодическое обновление погоды в фоновом режиме"
   },
   "privacyPermBrightsky": {
-    "message": "api.brightsky.dev -- Получение текущей погоды (открытые данные DWD)"
+    "message": "api.open-meteo.com -- Получение текущей погоды (Open-Meteo)"
   },
   "privacyPermNominatim": {
     "message": "nominatim.openstreetmap.org -- Геокодирование городов (только при поиске)"

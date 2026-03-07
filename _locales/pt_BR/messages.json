@@ -133,7 +133,7 @@
     "message": "Remover"
   },
   "dataSource": {
-    "message": "Dados: DWD via Bright Sky API"
+    "message": "Dados: Open-Meteo API"
   },
   "labelUnit": {
     "message": "Temperatura"
@@ -180,7 +180,7 @@
     "message": "Requisicoes de rede"
   },
   "privacyNetworkText": {
-    "message": "A extensao contata apenas dois servicos: api.brightsky.dev para dados meteorologicos (dados abertos do DWD) e nominatim.openstreetmap.org para geocodificacao de cidades (apenas ao buscar). Sem rastreamento, sem analiticos."
+    "message": "A extensao contata apenas dois servicos: api.open-meteo.com para dados meteorologicos (Open-Meteo) e nominatim.openstreetmap.org para geocodificacao de cidades (apenas ao buscar). Sem rastreamento, sem analiticos."
   },
   "privacyPermissionsTitle": {
     "message": "Permissoes"
@@ -192,7 +192,7 @@
     "message": "alarms -- Atualizacoes meteorologicas periodicas em segundo plano"
   },
   "privacyPermBrightsky": {
-    "message": "api.brightsky.dev -- Obtencao do clima atual (dados abertos do DWD)"
+    "message": "api.open-meteo.com -- Obtencao do clima atual (Open-Meteo)"
   },
   "privacyPermNominatim": {
     "message": "nominatim.openstreetmap.org -- Geocodificacao de cidades (apenas ao buscar)"

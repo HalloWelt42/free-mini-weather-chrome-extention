@@ -133,7 +133,7 @@
     "message": "Hapus"
   },
   "dataSource": {
-    "message": "Data: DWD via Bright Sky API"
+    "message": "Data: Open-Meteo API"
   },
   "labelUnit": {
     "message": "Suhu"
@@ -180,7 +180,7 @@
     "message": "Permintaan Jaringan"
   },
   "privacyNetworkText": {
-    "message": "Ekstensi hanya menghubungi dua layanan: api.brightsky.dev untuk data cuaca (data terbuka DWD) dan nominatim.openstreetmap.org untuk geocoding kota (hanya saat pencarian). Tanpa pelacakan, tanpa analitik."
+    "message": "Ekstensi hanya menghubungi dua layanan: api.open-meteo.com untuk data cuaca (Open-Meteo) dan nominatim.openstreetmap.org untuk geocoding kota (hanya saat pencarian). Tanpa pelacakan, tanpa analitik."
   },
   "privacyPermissionsTitle": {
     "message": "Izin"
@@ -192,7 +192,7 @@
     "message": "alarms -- Pembaruan cuaca berkala di latar belakang"
   },
   "privacyPermBrightsky": {
-    "message": "api.brightsky.dev -- Mengambil cuaca saat ini (data terbuka DWD)"
+    "message": "api.open-meteo.com -- Mengambil cuaca saat ini (Open-Meteo)"
   },
   "privacyPermNominatim": {
     "message": "nominatim.openstreetmap.org -- Geocoding kota (hanya saat pencarian)"

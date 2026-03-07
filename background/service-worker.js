@@ -1,12 +1,12 @@
 // ============================================================
-// Free better Weather -- Background Service Worker v3.2.2
-// Bright Sky API + Nominatim Geocoding
+// Free better Weather -- Background Service Worker v3.3.0
+// Open-Meteo API + Nominatim Geocoding
 // (c) HalloWelt42
 // ============================================================
 
 import { createIconImageData } from '../shared/icon-renderer.js';
 
-const BRIGHT_SKY_API = 'https://api.brightsky.dev';
+const OPEN_METEO_API = 'https://api.open-meteo.com/v1/forecast';
 const NOMINATIM_API = 'https://nominatim.openstreetmap.org';
 const STORAGE_KEY = 'wfdData';
 const ALARM_NAME = 'weatherUpdate';
@@ -22,16 +22,34 @@ const DEFAULTS = {
   cache: {},
 };
 
-// Condition keys for i18n tooltip
-const CONDITION_I18N = {
-  'dry': 'conditionDry',
-  'fog': 'conditionFog',
-  'rain': 'conditionRain',
-  'sleet': 'conditionSleet',
-  'snow': 'conditionSnow',
-  'hail': 'conditionHail',
-  'thunderstorm': 'conditionThunderstorm',
-};
+// WMO Weather Code -> icon condition
+function wmoToCondition(code, isDay) {
+  const day = isDay === 1;
+  if (code === 0) return day ? 'clear-day' : 'clear-night';
+  if (code <= 2) return day ? 'partly-cloudy-day' : 'partly-cloudy-night';
+  if (code === 3) return 'cloudy';
+  if (code === 45 || code === 48) return 'fog';
+  if (code >= 51 && code <= 55) return 'rain';
+  if (code === 56 || code === 57) return 'sleet';
+  if (code >= 61 && code <= 65) return 'rain';
+  if (code === 66 || code === 67) return 'sleet';
+  if (code >= 71 && code <= 77) return 'snow';
+  if (code >= 80 && code <= 82) return 'rain';
+  if (code >= 85 && code <= 86) return 'snow';
+  if (code >= 95) return 'thunderstorm';
+  return 'cloudy';
+}
+
+// WMO Weather Code -> i18n condition key
+function wmoToConditionKey(code) {
+  if (code <= 3) return 'conditionDry';
+  if (code === 45 || code === 48) return 'conditionFog';
+  if (code === 56 || code === 57 || code === 66 || code === 67) return 'conditionSleet';
+  if ((code >= 51 && code <= 55) || (code >= 61 && code <= 65) || (code >= 80 && code <= 82)) return 'conditionRain';
+  if ((code >= 71 && code <= 77) || (code >= 85 && code <= 86)) return 'conditionSnow';
+  if (code >= 95) return 'conditionThunderstorm';
+  return 'conditionDry';
+}
 
 let data = JSON.parse(JSON.stringify(DEFAULTS));
 let currentWeather = null;
@@ -174,7 +192,9 @@ async function updateWeather() {
   }
 
   try {
-    const url = BRIGHT_SKY_API + '/current_weather?lat=' + loc.lat + '&lon=' + loc.lon;
+    const url = OPEN_METEO_API
+      + '?latitude=' + loc.lat + '&longitude=' + loc.lon
+      + '&current=temperature_2m,relative_humidity_2m,weather_code,wind_speed_10m,wind_direction_10m,cloud_cover,dew_point_2m,pressure_msl,is_day';
     const resp = await fetch(url, { signal: AbortSignal.timeout(10000) });
     if (!resp.ok) {
       console.warn('[Weather] HTTP ' + resp.status);
@@ -185,7 +205,7 @@ async function updateWeather() {
       return;
     }
     const json = await resp.json();
-    const weather = parseBrightSkyData(json);
+    const weather = parseOpenMeteoData(json);
     currentWeather = weather;
 
     setCachedWeather(loc, weather);
@@ -207,22 +227,21 @@ async function updateWeather() {
   }
 }
 
-// === PARSE BRIGHT SKY DATA ===
-function parseBrightSkyData(json) {
-  const w = json.weather;
+// === PARSE OPEN-METEO DATA ===
+function parseOpenMeteoData(json) {
+  const c = json.current;
+  const code = c.weather_code ?? 0;
   return {
-    temperature: w.temperature ?? null,
-    condition: w.icon || 'cloudy',
-    conditionDwd: w.condition || null,
-    humidity: w.relative_humidity ?? null,
-    windSpeed: w.wind_speed_10 ?? null,
-    windDir: w.wind_direction_10 ?? null,
-    cloudCover: w.cloud_cover ?? null,
-    dewPoint: w.dew_point ?? null,
-    pressure: w.pressure_msl ?? null,
-    visibility: w.visibility ?? null,
-    precipitation: w.precipitation_10 ?? null,
-    timestamp: w.timestamp,
+    temperature: c.temperature_2m ?? null,
+    condition: wmoToCondition(code, c.is_day),
+    conditionKey: wmoToConditionKey(code),
+    humidity: c.relative_humidity_2m ?? null,
+    windSpeed: c.wind_speed_10m ?? null,
+    windDir: c.wind_direction_10m ?? null,
+    cloudCover: c.cloud_cover ?? null,
+    dewPoint: c.dew_point_2m ?? null,
+    pressure: c.pressure_msl ?? null,
+    timestamp: c.time,
   };
 }
 
@@ -255,15 +274,14 @@ function buildTooltip(w) {
   if (w.temperature !== null) {
     parts.push(convertTemp(w.temperature) + '°' + tempUnit());
   }
-  if (w.conditionDwd) {
-    const key = CONDITION_I18N[w.conditionDwd];
-    parts.push(key ? i18n(key) : w.conditionDwd);
+  if (w.conditionKey) {
+    parts.push(i18n(w.conditionKey));
   }
   if (w.humidity !== null) {
     parts.push(w.humidity + '%');
   }
   if (w.windSpeed !== null) {
-    parts.push(Math.round(w.windSpeed * 3.6) + ' km/h');
+    parts.push(Math.round(w.windSpeed) + ' km/h');
   }
   return parts.join(' | ');
 }

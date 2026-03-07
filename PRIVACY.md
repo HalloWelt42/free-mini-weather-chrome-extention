@@ -26,8 +26,8 @@ Die Extension kontaktiert ausschließlich zwei Dienste:
 
 | Dienst | URL | Zweck | Häufigkeit |
 |---|---|---|---|
-| Bright Sky API | api.brightsky.dev | Wetterdaten (offene DWD-Daten) | Alle 5-60 Min (einstellbar) |
-| Nominatim | nominatim.openstreetmap.org | Geocoding (Stadt -> Koordinaten) | Nur bei manueller Suche |
+| Open-Meteo API | api.open-meteo.com | Wetterdaten (weltweit) | Alle 5-60 Min (einstellbar) |
+| Nominatim | nominatim.openstreetmap.org | Geocoding (Stadt -> Koordinaten) | Bei Suche |
 
 - Beide Dienste sind kostenlos, offen und benötigen keinen API-Key
 - Es werden **keine** Cookies, Tracker oder Analytics verwendet
@@ -39,7 +39,7 @@ Die Extension kontaktiert ausschließlich zwei Dienste:
 |---|---|
 | `storage` | Lokale Speicherung von Einstellungen und gecachten Wetterdaten |
 | `alarms` | Periodische Wetter-Updates im Hintergrund (Standard: 15 Min) |
-| `host_permissions: api.brightsky.dev` | Abruf aktueller Wetterdaten (DWD Open Data) |
+| `host_permissions: api.open-meteo.com` | Abruf aktueller Wetterdaten (Open-Meteo) |
 | `host_permissions: nominatim.openstreetmap.org` | Geocoding von Städtenamen zu Koordinaten |
 
 #### Quellcode
@@ -70,8 +70,8 @@ The extension contacts only two services:
 
 | Service | URL | Purpose | Frequency |
 |---|---|---|---|
-| Bright Sky API | api.brightsky.dev | Weather data (open DWD data) | Every 5-60 min (configurable) |
-| Nominatim | nominatim.openstreetmap.org | Geocoding (city -> coordinates) | Only on manual search |
+| Open-Meteo API | api.open-meteo.com | Weather data (worldwide) | Every 5-60 min (configurable) |
+| Nominatim | nominatim.openstreetmap.org | Geocoding (city -> coordinates) | On search |
 
 - Both services are free, open, and require no API key
 - **No** cookies, trackers, or analytics are used
@@ -83,7 +83,7 @@ The extension contacts only two services:
 |---|---|
 | `storage` | Local storage of settings and cached weather data |
 | `alarms` | Periodic weather updates in background (default: 15 min) |
-| `host_permissions: api.brightsky.dev` | Fetching current weather data (DWD Open Data) |
+| `host_permissions: api.open-meteo.com` | Fetching current weather data (Open-Meteo) |
 | `host_permissions: nominatim.openstreetmap.org` | Geocoding city names to coordinates |
 
 #### Source Code

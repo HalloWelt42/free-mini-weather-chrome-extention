@@ -133,7 +133,7 @@
     "message": "हटाएं"
   },
   "dataSource": {
-    "message": "डेटा: DWD via Bright Sky API"
+    "message": "डेटा: Open-Meteo API"
   },
   "labelUnit": {
     "message": "तापमान"
@@ -180,7 +180,7 @@
     "message": "नेटवर्क अनुरोध"
   },
   "privacyNetworkText": {
-    "message": "एक्सटेंशन केवल दो सेवाओं से संपर्क करता है: मौसम डेटा के लिए api.brightsky.dev (DWD ओपन डेटा) और शहर जियोकोडिंग के लिए nominatim.openstreetmap.org (केवल खोज करते समय)। कोई ट्रैकिंग नहीं, कोई एनालिटिक्स नहीं।"
+    "message": "एक्सटेंशन केवल दो सेवाओं से संपर्क करता है: मौसम डेटा के लिए api.open-meteo.com (Open-Meteo) और शहर जियोकोडिंग के लिए nominatim.openstreetmap.org (केवल खोज करते समय)। कोई ट्रैकिंग नहीं, कोई एनालिटिक्स नहीं।"
   },
   "privacyPermissionsTitle": {
     "message": "अनुमतियां"
@@ -192,7 +192,7 @@
     "message": "alarms -- पृष्ठभूमि में आवधिक मौसम अपडेट"
   },
   "privacyPermBrightsky": {
-    "message": "api.brightsky.dev -- वर्तमान मौसम प्राप्त करना (DWD ओपन डेटा)"
+    "message": "api.open-meteo.com -- वर्तमान मौसम प्राप्त करना (Open-Meteo)"
   },
   "privacyPermNominatim": {
     "message": "nominatim.openstreetmap.org -- शहर जियोकोडिंग (केवल खोज करते समय)"

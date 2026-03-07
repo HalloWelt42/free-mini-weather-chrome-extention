@@ -133,7 +133,7 @@
     "message": "Kaldır"
   },
   "dataSource": {
-    "message": "Veri: DWD via Bright Sky API"
+    "message": "Veri: Open-Meteo API"
   },
   "labelUnit": {
     "message": "Sıcaklık"
@@ -180,7 +180,7 @@
     "message": "Ağ İstekleri"
   },
   "privacyNetworkText": {
-    "message": "Eklenti yalnızca iki hizmetle iletişim kurar: hava durumu verileri için api.brightsky.dev (DWD açık veri) ve şehir coğrafi kodlaması için nominatim.openstreetmap.org (yalnızca arama sırasında). İzleme yok, analitik yok."
+    "message": "Eklenti yalnızca iki hizmetle iletişim kurar: hava durumu verileri için api.open-meteo.com (Open-Meteo) ve şehir coğrafi kodlaması için nominatim.openstreetmap.org (yalnızca arama sırasında). İzleme yok, analitik yok."
   },
   "privacyPermissionsTitle": {
     "message": "İzinler"
@@ -192,7 +192,7 @@
     "message": "alarms -- Arka planda periyodik hava durumu güncellemeleri"
   },
   "privacyPermBrightsky": {
-    "message": "api.brightsky.dev -- Güncel hava durumunu alma (DWD açık veri)"
+    "message": "api.open-meteo.com -- Güncel hava durumunu alma (Open-Meteo)"
   },
   "privacyPermNominatim": {
     "message": "nominatim.openstreetmap.org -- Şehir coğrafi kodlaması (yalnızca arama sırasında)"

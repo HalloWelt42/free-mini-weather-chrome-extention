@@ -133,7 +133,7 @@
     "message": "移除"
   },
   "dataSource": {
-    "message": "資料: DWD via Bright Sky API"
+    "message": "資料: Open-Meteo API"
   },
   "labelUnit": {
     "message": "温度"
@@ -180,7 +180,7 @@
     "message": "網路請求"
   },
   "privacyNetworkText": {
-    "message": "該擴充功能僅連接兩個服務: api.brightsky.dev用於天氣資料 (DWD開放資料) 和nominatim.openstreetmap.org用於城市地理編碼 (僅在搜尋時)。無追蹤、無分析。"
+    "message": "該擴充功能僅連接兩個服務: api.open-meteo.com用於天氣資料 (Open-Meteo) 和nominatim.openstreetmap.org用於城市地理編碼 (僅在搜尋時)。無追蹤、無分析。"
   },
   "privacyPermissionsTitle": {
     "message": "權限"
@@ -192,7 +192,7 @@
     "message": "alarms -- 背景定期更新天氣"
   },
   "privacyPermBrightsky": {
-    "message": "api.brightsky.dev -- 取得目前天氣 (DWD開放資料)"
+    "message": "api.open-meteo.com -- 取得目前天氣 (Open-Meteo)"
   },
   "privacyPermNominatim": {
     "message": "nominatim.openstreetmap.org -- 城市地理編碼 (僅在搜尋時)"

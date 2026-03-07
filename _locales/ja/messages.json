@@ -133,7 +133,7 @@
     "message": "削除"
   },
   "dataSource": {
-    "message": "データ: DWD via Bright Sky API"
+    "message": "データ: Open-Meteo API"
   },
   "labelUnit": {
     "message": "温度"
@@ -180,7 +180,7 @@
     "message": "ネットワークリクエスト"
   },
   "privacyNetworkText": {
-    "message": "この拡張機能は2つのサービスのみに接続します: 天気データ用のapi.brightsky.dev (DWDオープンデータ) と都市ジオコーディング用のnominatim.openstreetmap.org (検索時のみ)。トラッキングなし、分析なし。"
+    "message": "この拡張機能は2つのサービスのみに接続します: 天気データ用のapi.open-meteo.com (Open-Meteo) と都市ジオコーディング用のnominatim.openstreetmap.org (検索時のみ)。トラッキングなし、分析なし。"
   },
   "privacyPermissionsTitle": {
     "message": "権限"
@@ -192,7 +192,7 @@
     "message": "alarms -- バックグラウンドでの定期的な天気更新"
   },
   "privacyPermBrightsky": {
-    "message": "api.brightsky.dev -- 現在の天気の取得 (DWDオープンデータ)"
+    "message": "api.open-meteo.com -- 現在の天気の取得 (Open-Meteo)"
   },
   "privacyPermNominatim": {
     "message": "nominatim.openstreetmap.org -- 都市ジオコーディング (検索時のみ)"

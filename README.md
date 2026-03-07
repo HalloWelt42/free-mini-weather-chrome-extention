@@ -6,7 +6,7 @@ Chrome Extension -- Wetterdaten direkt im Browser-Toolbar.
 
 ## Features
 
-- Aktuelle Wetterdaten via Bright Sky API
+- Aktuelle Wetterdaten via Open-Meteo API (weltweit)
 - Temperatur als Badge im Toolbar-Icon
 - Canvas-basierte Wetter-Symbole (15 Wetterbedingungen)
 - Stadtsuche via Nominatim (OpenStreetMap) -- weltweit
@@ -25,7 +25,7 @@ Chrome Extension -- Wetterdaten direkt im Browser-Toolbar.
 
 ## Datenquellen
 
-- **Wetter:** [Bright Sky API](https://brightsky.dev/) -- Offene DWD-Daten
+- **Wetter:** [Open-Meteo API](https://open-meteo.com/) -- Kostenlose weltweite Wetterdaten
 - **Geocoding:** [Nominatim](https://nominatim.openstreetmap.org/) -- OpenStreetMap
 
 ## Datenschutz

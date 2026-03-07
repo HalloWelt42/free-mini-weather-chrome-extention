@@ -1,5 +1,5 @@
 // ============================================================
-// Free better Weather -- Popup v3.2.2
+// Free better Weather -- Popup v3.3.0
 // (c) HalloWelt42
 // ============================================================
 
@@ -21,12 +21,12 @@
   const elBtnSearch = document.getElementById('btnSearch');
   const elSearchResults = document.getElementById('searchResults');
   const elIntervalSelect = document.getElementById('intervalSelect');
-  const elBtnSave = document.getElementById('btnSave');
   const elBtnRefresh = document.getElementById('btnRefresh');
   const elStatusMsg = document.getElementById('statusMsg');
   const elFooterCopyright = document.getElementById('footerCopyright');
   const elLinkDonate = document.getElementById('linkDonate');
   const elLinkPrivacy = document.getElementById('linkPrivacy');
+  const elLinkGithub = document.getElementById('linkGithub');
   const elModeBtns = document.querySelectorAll('.mode-btn');
   const elUnitBtns = document.querySelectorAll('.unit-btn');
 
@@ -40,16 +40,6 @@
   };
   let weather = null;
 
-  // Condition display names (API key -> i18n key)
-  const CONDITION_LABELS = {
-    'dry': 'conditionDry',
-    'fog': 'conditionFog',
-    'rain': 'conditionRain',
-    'sleet': 'conditionSleet',
-    'snow': 'conditionSnow',
-    'hail': 'conditionHail',
-    'thunderstorm': 'conditionThunderstorm',
-  };
 
   // === TEMPERATURE ===
   function convertTemp(celsius) {
@@ -77,30 +67,54 @@
       e.preventDefault();
       chrome.tabs.create({ url: chrome.runtime.getURL('pages/privacy.html') });
     });
+    elLinkGithub.addEventListener('click', function(e) {
+      e.preventDefault();
+      chrome.tabs.create({ url: 'https://github.com/HalloWelt42/claude-limit-chrome-addon' });
+    });
 
     elBtnSearch.addEventListener('click', doSearch);
     elSearchInput.addEventListener('keydown', function(e) {
       if (e.key === 'Enter') doSearch();
     });
-    elBtnSave.addEventListener('click', doSave);
+
+    // Auto-search as user types
+    var searchTimer = null;
+    elSearchInput.addEventListener('input', function() {
+      clearTimeout(searchTimer);
+      var val = elSearchInput.value.trim();
+      if (val.length < 2) {
+        elSearchResults.classList.add('hidden');
+        return;
+      }
+      searchTimer = setTimeout(doSearch, 400);
+    });
+
     elBtnRefresh.addEventListener('click', doRefresh);
 
-    // Mode buttons
+    // Auto-save on interval change
+    elIntervalSelect.addEventListener('change', function() {
+      settings.updateInterval = parseInt(elIntervalSelect.value, 10) || 15;
+      doSave();
+    });
+
+    // Mode buttons -- auto-save
     elModeBtns.forEach(function(btn) {
       btn.addEventListener('click', function() {
         elModeBtns.forEach(function(b) { b.classList.remove('active'); });
         btn.classList.add('active');
         settings.displayMode = btn.dataset.mode;
+        doSave();
       });
     });
 
-    // Unit buttons
+    // Unit buttons -- auto-save
     elUnitBtns.forEach(function(btn) {
       btn.addEventListener('click', function() {
         elUnitBtns.forEach(function(b) { b.classList.remove('active'); });
         btn.classList.add('active');
         settings.temperatureUnit = btn.dataset.unit;
         renderWeather();
+        doSave();
       });
     });
 
@@ -150,9 +164,8 @@
 
     // Condition text
     var condText = '';
-    if (weather.conditionDwd) {
-      var key = CONDITION_LABELS[weather.conditionDwd];
-      condText = key ? i18n(key) : weather.conditionDwd;
+    if (weather.conditionKey) {
+      condText = i18n(weather.conditionKey);
     }
     elWeatherCondition.textContent = condText;
 
@@ -161,7 +174,7 @@
       elDetailHumidity.textContent = i18n('humidity') + ' ' + weather.humidity + '%';
     }
     if (weather.windSpeed !== null && weather.windSpeed !== undefined) {
-      elDetailWind.textContent = i18n('wind') + ' ' + Math.round(weather.windSpeed * 3.6) + ' km/h';
+      elDetailWind.textContent = i18n('wind') + ' ' + Math.round(weather.windSpeed) + ' km/h';
     }
     if (weather.cloudCover !== null && weather.cloudCover !== undefined) {
       elDetailClouds.textContent = i18n('clouds') + ' ' + weather.cloudCover + '%';
@@ -223,6 +236,7 @@
         if (e.target.classList.contains('chip-remove')) return;
         settings.activeLocationIndex = idx;
         renderLocationChips();
+        doSave();
       });
 
       var remove = document.createElement('span');
@@ -235,6 +249,7 @@
           settings.activeLocationIndex = Math.max(0, settings.locations.length - 1);
         }
         renderLocationChips();
+        doSave();
       });
 
       chip.appendChild(remove);
@@ -325,6 +340,7 @@
     settings.locations.push(loc);
     settings.activeLocationIndex = settings.locations.length - 1;
     renderLocationChips();
+    doSave();
   }
 
   function doSave() {
@@ -337,9 +353,7 @@
       if (resp && resp.success) {
         weather = resp.weather;
         renderWeather();
-        showStatus(i18n('statusSaved'));
-      } else {
-        showStatus(i18n('statusError'), true);
+        renderModePreviews();
       }
     });
   }

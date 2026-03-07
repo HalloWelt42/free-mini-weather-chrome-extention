@@ -133,7 +133,7 @@
     "message": "삭제"
   },
   "dataSource": {
-    "message": "데이터: DWD via Bright Sky API"
+    "message": "데이터: Open-Meteo API"
   },
   "labelUnit": {
     "message": "온도"
@@ -180,7 +180,7 @@
     "message": "네트워크 요청"
   },
   "privacyNetworkText": {
-    "message": "이 확장 프로그램은 두 가지 서비스에만 연결합니다: 날씨 데이터용 api.brightsky.dev (DWD 오픈 데이터)와 도시 지오코딩용 nominatim.openstreetmap.org (검색 시에만). 추적 없음, 분석 없음."
+    "message": "이 확장 프로그램은 두 가지 서비스에만 연결합니다: 날씨 데이터용 api.open-meteo.com (Open-Meteo)와 도시 지오코딩용 nominatim.openstreetmap.org (검색 시에만). 추적 없음, 분석 없음."
   },
   "privacyPermissionsTitle": {
     "message": "권한"
@@ -192,7 +192,7 @@
     "message": "alarms -- 백그라운드에서 주기적 날씨 업데이트"
   },
   "privacyPermBrightsky": {
-    "message": "api.brightsky.dev -- 현재 날씨 가져오기 (DWD 오픈 데이터)"
+    "message": "api.open-meteo.com -- 현재 날씨 가져오기 (Open-Meteo)"
   },
   "privacyPermNominatim": {
     "message": "nominatim.openstreetmap.org -- 도시 지오코딩 (검색 시에만)"

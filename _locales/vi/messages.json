@@ -133,7 +133,7 @@
     "message": "Xóa"
   },
   "dataSource": {
-    "message": "Dữ liệu: DWD via Bright Sky API"
+    "message": "Dữ liệu: Open-Meteo API"
   },
   "labelUnit": {
     "message": "Nhiệt độ"
@@ -180,7 +180,7 @@
     "message": "Yêu cầu mạng"
   },
   "privacyNetworkText": {
-    "message": "Tiện ích mở rộng chỉ liên hệ hai dịch vụ: api.brightsky.dev để lấy dữ liệu thời tiết (dữ liệu mở DWD) và nominatim.openstreetmap.org để mã hóa địa lý thành phố (chỉ khi tìm kiếm). Không theo dõi, không phân tích."
+    "message": "Tiện ích mở rộng chỉ liên hệ hai dịch vụ: api.open-meteo.com để lấy dữ liệu thời tiết (Open-Meteo) và nominatim.openstreetmap.org để mã hóa địa lý thành phố (chỉ khi tìm kiếm). Không theo dõi, không phân tích."
   },
   "privacyPermissionsTitle": {
     "message": "Quyền"
@@ -192,7 +192,7 @@
     "message": "alarms -- Cập nhật thời tiết định kỳ trong nền"
   },
   "privacyPermBrightsky": {
-    "message": "api.brightsky.dev -- Lấy thời tiết hiện tại (dữ liệu mở DWD)"
+    "message": "api.open-meteo.com -- Lấy thời tiết hiện tại (Open-Meteo)"
   },
   "privacyPermNominatim": {
     "message": "nominatim.openstreetmap.org -- Mã hóa địa lý thành phố (chỉ khi tìm kiếm)"

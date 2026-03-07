@@ -133,7 +133,7 @@
     "message": "ลบ"
   },
   "dataSource": {
-    "message": "ข้อมูล: DWD via Bright Sky API"
+    "message": "ข้อมูล: Open-Meteo API"
   },
   "labelUnit": {
     "message": "อุณหภูมิ"
@@ -180,7 +180,7 @@
     "message": "คำขอเครือข่าย"
   },
   "privacyNetworkText": {
-    "message": "ส่วนขยายติดต่อเพียงสองบริการ: api.brightsky.dev สำหรับข้อมูลสภาพอากาศ (ข้อมูลเปิด DWD) และ nominatim.openstreetmap.org สำหรับการระบุพิกัดเมือง (เฉพาะเมื่อค้นหา) ไม่มีการติดตาม ไม่มีการวิเคราะห์"
+    "message": "ส่วนขยายติดต่อเพียงสองบริการ: api.open-meteo.com สำหรับข้อมูลสภาพอากาศ (Open-Meteo) และ nominatim.openstreetmap.org สำหรับการระบุพิกัดเมือง (เฉพาะเมื่อค้นหา) ไม่มีการติดตาม ไม่มีการวิเคราะห์"
   },
   "privacyPermissionsTitle": {
     "message": "สิทธิ์"
@@ -192,7 +192,7 @@
     "message": "alarms -- อัปเดตสภาพอากาศเป็นระยะในพื้นหลัง"
   },
   "privacyPermBrightsky": {
-    "message": "api.brightsky.dev -- ดึงข้อมูลสภาพอากาศปัจจุบัน (ข้อมูลเปิด DWD)"
+    "message": "api.open-meteo.com -- ดึงข้อมูลสภาพอากาศปัจจุบัน (Open-Meteo)"
   },
   "privacyPermNominatim": {
     "message": "nominatim.openstreetmap.org -- ระบุพิกัดเมือง (เฉพาะเมื่อค้นหา)"

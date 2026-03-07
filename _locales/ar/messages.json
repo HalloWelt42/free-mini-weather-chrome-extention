@@ -133,7 +133,7 @@
     "message": "ازالة"
   },
   "dataSource": {
-    "message": "البيانات: DWD via Bright Sky API"
+    "message": "البيانات: Open-Meteo API"
   },
   "labelUnit": {
     "message": "درجة الحرارة"
@@ -180,7 +180,7 @@
     "message": "طلبات الشبكة"
   },
   "privacyNetworkText": {
-    "message": "تتصل الاضافة بخدمتين فقط: api.brightsky.dev لبيانات الطقس (بيانات DWD المفتوحة) وnominatim.openstreetmap.org للترميز الجغرافي للمدن (عند البحث فقط). بدون تتبع، بدون تحليلات."
+    "message": "تتصل الاضافة بخدمتين فقط: api.open-meteo.com لبيانات الطقس (Open-Meteo) وnominatim.openstreetmap.org للترميز الجغرافي للمدن (عند البحث فقط). بدون تتبع، بدون تحليلات."
   },
   "privacyPermissionsTitle": {
     "message": "الاذونات"
@@ -192,7 +192,7 @@
     "message": "alarms -- تحديثات طقس دورية في الخلفية"
   },
   "privacyPermBrightsky": {
-    "message": "api.brightsky.dev -- جلب الطقس الحالي (بيانات DWD المفتوحة)"
+    "message": "api.open-meteo.com -- جلب الطقس الحالي (Open-Meteo)"
   },
   "privacyPermNominatim": {
     "message": "nominatim.openstreetmap.org -- الترميز الجغرافي للمدن (عند البحث فقط)"
